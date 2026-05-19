@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if anyone adds a dev server later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+
+# Build artifacts (none today, but be defensive)
+dist/
+build/
+.cache/
+
+# Temporary screenshot and snapshot artifacts
+.playwright-mcp/
+*-bug-*.png
+*-screenshot-*.png
+
+# Local environment
+.env
+.env.local
