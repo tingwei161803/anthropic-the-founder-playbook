@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>創辦人的行動手冊 · 精華導讀版</title>
-<meta name="description" content="Anthropic《創辦人的行動手冊》雙語精華導讀版——一份橫跨構想、MVP、上線到規模化四大階段，專為 AI 原生新創而寫的階段地圖。">
-<meta property="og:title" content="創辦人的行動手冊 · 精華導讀版">
-<meta property="og:description" content="Anthropic 為 AI 原生創辦人撰寫的行動手冊，編輯精華導讀版。">
+<title>The Founder's Playbook · Reader's Edition</title>
+<meta name="description" content="A bilingual reader's edition of Anthropic's The Founder's Playbook — a guide to building an AI-native startup across the Idea, MVP, Launch, and Scale stages.">
+<meta property="og:title" content="The Founder's Playbook · Reader's Edition">
+<meta property="og:description" content="An editorial reader's edition of Anthropic's playbook for AI-native founders.">
 <meta property="og:type" content="article">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,30..100;1,9..144,300..600,30..100&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+TC:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="assets/styles.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='10' height='10' x='3' y='3' fill='%23CC785C' transform='rotate(45 8 8)'/%3E%3Crect width='4' height='4' x='6' y='6' fill='%23F0EEE6' transform='rotate(45 8 8)'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -20,22 +20,22 @@
 
 <header class="site-header">
   <div class="site-header__inner">
-    <a class="brand" href="#cover" aria-label="創辦人的行動手冊首頁">
+    <a class="brand" href="#cover" aria-label="The Founder's Playbook home">
       <span class="brand__mark" aria-hidden="true"></span>
-      <span>創辦人的行動手冊</span>
+      <span>The Founder's Playbook</span>
       <span class="brand__sep">·</span>
-      <span class="brand__sub">精華導讀版</span>
+      <span class="brand__sub">Reader's Edition</span>
     </a>
     <div class="site-header__actions">
-      <a class="ghstar" href="https://github.com/tingwei161803/anthropic-the-founder-playbook" target="_blank" rel="noopener" aria-label="到 GitHub 為這個專案按星星">
+      <a class="ghstar" href="https://github.com/tingwei161803/anthropic-the-founder-playbook" target="_blank" rel="noopener" aria-label="Star this project on GitHub">
         <svg class="ghstar__logo" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
-        <span class="ghstar__text">給顆星</span>
+        <span class="ghstar__text">Star on GitHub</span>
         <span class="ghstar__star" aria-hidden="true">★</span>
         <span class="ghstar__count" hidden></span>
       </a>
-      <nav class="lang-switch" aria-label="語言">
-        <a href="../" data-lang-link>EN</a>
-        <a href="./" aria-current="true">繁中</a>
+      <nav class="lang-switch" aria-label="Language">
+        <a href="./" aria-current="true">EN</a>
+        <a href="./zh-Hant/" data-lang-link>繁中</a>
       </nav>
     </div>
   </div>
@@ -44,26 +44,26 @@
 <div class="layout">
 
   <!-- ============ TOC ============ -->
-  <aside class="toc" aria-label="目錄">
-    <button class="toc__toggle" type="button">目錄</button>
+  <aside class="toc" aria-label="Contents">
+    <button class="toc__toggle" type="button">Contents</button>
     <div class="toc__panel">
-      <p class="toc__label">目錄</p>
+      <p class="toc__label">Contents</p>
       <ol class="toc__list">
-        <li class="toc__item" data-target="cover"><a href="#cover"><span class="toc__num">00</span>封面</a></li>
-        <li class="toc__item" data-target="ch01"><a href="#ch01"><span class="toc__num">01</span>生命週期，重啟版</a></li>
-        <li class="toc__item" data-target="ch02"><a href="#ch02"><span class="toc__num">02</span>創辦人的定義正在改變</a></li>
-        <li class="toc__item" data-target="ch03"><a href="#ch03"><span class="toc__num">03</span>構想階段</a></li>
-        <li class="toc__item" data-target="ch04"><a href="#ch04"><span class="toc__num">04</span>MVP 階段</a></li>
-        <li class="toc__item" data-target="ch05"><a href="#ch05"><span class="toc__num">05</span>上線階段</a></li>
-        <li class="toc__item" data-target="ch06"><a href="#ch06"><span class="toc__num">06</span>規模化階段</a></li>
-        <li class="toc__item" data-target="ch07"><a href="#ch07"><span class="toc__num">07</span>工作未變，規則已改</a></li>
-        <li class="toc__item" data-target="resources"><a href="#resources"><span class="toc__num">08</span>延伸資源</a></li>
+        <li class="toc__item" data-target="cover"><a href="#cover"><span class="toc__num">00</span>Cover</a></li>
+        <li class="toc__item" data-target="ch01"><a href="#ch01"><span class="toc__num">01</span>The lifecycle, rebooted</a></li>
+        <li class="toc__item" data-target="ch02"><a href="#ch02"><span class="toc__num">02</span>What it means to be a founder</a></li>
+        <li class="toc__item" data-target="ch03"><a href="#ch03"><span class="toc__num">03</span>Idea Stage</a></li>
+        <li class="toc__item" data-target="ch04"><a href="#ch04"><span class="toc__num">04</span>MVP Stage</a></li>
+        <li class="toc__item" data-target="ch05"><a href="#ch05"><span class="toc__num">05</span>Launch Stage</a></li>
+        <li class="toc__item" data-target="ch06"><a href="#ch06"><span class="toc__num">06</span>Scale Stage</a></li>
+        <li class="toc__item" data-target="ch07"><a href="#ch07"><span class="toc__num">07</span>Same job, new rules</a></li>
+        <li class="toc__item" data-target="resources"><a href="#resources"><span class="toc__num">08</span>Resources</a></li>
       </ol>
 
       <div class="toc__cta">
-        <p class="toc__cta-label">原文</p>
-        <p class="toc__cta-title">閱讀完整版手冊</p>
-        <a class="toc__cta-link" href="https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf" target="_blank" rel="noopener">36 頁 PDF</a>
+        <p class="toc__cta-label">Original</p>
+        <p class="toc__cta-title">Read the full playbook</p>
+        <a class="toc__cta-link" href="https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf" target="_blank" rel="noopener">36-page PDF</a>
       </div>
     </div>
   </aside>
@@ -73,35 +73,35 @@
 
     <!-- ====== Cover / Hero ====== -->
     <section class="section hero" id="cover">
-      <p class="hero__eyebrow">Anthropic 出版 · 2026 年 5 月</p>
-      <h1 class="hero__title">創辦人的<em>行動手冊</em></h1>
-      <p class="hero__lede">從一個構想到一家持久的公司——AI 原生新創一路上的階段地圖。</p>
+      <p class="hero__eyebrow">An Anthropic Publication · May 2026</p>
+      <h1 class="hero__title">The Founder's <em>Playbook</em></h1>
+      <p class="hero__lede">Building an AI-native startup, stage by stage — from one founder's idea to a company that lasts.</p>
 
       <div class="hero__meta">
         <div class="hero__meta-item">
-          <span class="hero__meta-label">出版者</span>
+          <span class="hero__meta-label">Publisher</span>
           <span class="hero__meta-value">Anthropic</span>
         </div>
         <div class="hero__meta-item">
-          <span class="hero__meta-label">篇幅</span>
-          <span class="hero__meta-value">36 頁 · 7 章</span>
+          <span class="hero__meta-label">Length</span>
+          <span class="hero__meta-value">36 pages · 7 chapters</span>
         </div>
         <div class="hero__meta-item">
-          <span class="hero__meta-label">適讀對象</span>
-          <span class="hero__meta-value">AI 原生創辦人</span>
+          <span class="hero__meta-label">Audience</span>
+          <span class="hero__meta-value">AI-native founders</span>
         </div>
         <div class="hero__meta-item">
-          <span class="hero__meta-label">版本</span>
-          <span class="hero__meta-value">精華導讀版 · EN / 繁中</span>
+          <span class="hero__meta-label">Edition</span>
+          <span class="hero__meta-value">Reader's summary · EN / 繁中</span>
         </div>
       </div>
 
       <div class="hero__actions">
         <a class="btn btn--primary" href="#ch01">
-          開始閱讀 <span class="btn__arrow">→</span>
+          Start reading <span class="btn__arrow">→</span>
         </a>
         <a class="btn btn--secondary" href="https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf" target="_blank" rel="noopener">
-          下載原文 PDF
+          Download original PDF
         </a>
       </div>
     </section>
@@ -109,118 +109,118 @@
     <!-- ====== Chapter 1 ====== -->
     <section class="section" id="ch01">
       <header class="chapter__head">
-        <span class="chapter__num">第 01 章</span>
-        <h2 class="chapter__title">新創公司的生命週期：2026 重啟版</h2>
-        <p class="chapter__sub">AI 不只是加速了工作——它重新繪製了從構想到退場之間的整張地圖。</p>
+        <span class="chapter__num">Chapter 01</span>
+        <h2 class="chapter__title">The startup lifecycle, rebooted for 2026</h2>
+        <p class="chapter__sub">AI hasn't just sped up the work — it has redrawn the map between idea and exit.</p>
       </header>
 
       <div class="prose">
-        <p class="dropcap">2026 年的創辦人可以在沒有工程背景的情況下寫出正式上線的程式碼，不用顧問也能完成市場研究，沒有團隊也能讓產品問世。AI 已經消解了「開公司」這件事過去所有的門檻——連帶讓那條曾經定義整個世代新創的線性路徑：驗證 → 募資 → 招聘 → 開發 → 再募資，徹底失效。</p>
-        <p>「精實的十人獨角獸」不再只是口號，而是一份可以被執行的計畫。本手冊將為一個全新的時代重新描繪這段旅程的四個階段——<strong>構想、MVP、上線、規模化</strong>——在這個時代，瓶頸不再是你能蓋出什麼，而是你選擇蓋什麼。</p>
+        <p class="dropcap">A founder in 2026 can write production code without engineering experience, run market research without a consultant, and ship a product without a team. AI has dissolved the historic prerequisites of starting a company — and with them, the linear arc of validate → raise → hire → build → raise again that defined every prior startup generation.</p>
+        <p>The lean ten-person unicorn is no longer a slogan; it's a deliberate plan of action. This playbook re-maps the four stages of the journey — <strong>Idea, MVP, Launch, Scale</strong> — for an era where the bottleneck is no longer what you can build, but what you choose to build.</p>
       </div>
 
       <blockquote class="pullquote">
-        AI 抹去了一個過去理所當然的預設：每進入一個新階段，就需要更大的團隊、更不一樣的技能組合、以及全新一輪的資金。
-        <span class="pullquote__attr">— 創辦人的行動手冊，第 1 章</span>
+        AI has erased the expectation that each new phase requires a bigger team, a different skill set, and a fresh funding round.
+        <span class="pullquote__attr">— The Founder's Playbook, Ch. 1</span>
       </blockquote>
     </section>
 
     <!-- ====== Chapter 2 ====== -->
     <section class="section" id="ch02">
       <header class="chapter__head">
-        <span class="chapter__num">第 02 章</span>
-        <h2 class="chapter__title">「創辦人」這份工作，定義正在改變</h2>
-        <p class="chapter__sub">從一名實作者，蛻變為調度多個代理的指揮者。</p>
+        <span class="chapter__num">Chapter 02</span>
+        <h2 class="chapter__title">What it means to be a founder is changing</h2>
+        <p class="chapter__sub">From individual contributor to orchestrator of agents.</p>
       </header>
 
       <div class="prose">
-        <p>「會寫東西的人」與「擁有值得做的想法的人」之間那道牆，已經被拆掉了。非技術背景的創辦人可以寫出正式上線的軟體；技術背景的創辦人也能產出財務模型與募資簡報。創辦人的注意力，正在從執行層往上挪——挪向方向感與判斷力。</p>
-        <p>三項 AI 能力，足以讓一家精實新創運轉得像一家規模大上許多的組織：</p>
+        <p>The wall between "people who can build" and "people with ideas worth building" has dissolved. A non-technical founder can ship production software; a technical founder can produce financial models and pitch decks. The founder's attention shifts up the stack — from execution to direction.</p>
+        <p>Three AI capabilities make a lean startup function like a much larger organization:</p>
       </div>
 
       <div class="tools">
         <article class="tool">
-          <h3 class="tool__name">對話式智能</h3>
-          <span class="tool__when">隨叫隨到的專家</span>
-          <p class="tool__desc">競爭分析、市場規模、財務建模、唱反調的思辨——所有過去得四處打聽「該怎麼辦？」的問題，現在都有答案。</p>
+          <h3 class="tool__name">Conversational intelligence</h3>
+          <span class="tool__when">On-call expert</span>
+          <p class="tool__desc">Competitive analysis, market sizing, financial modeling, devil's-advocate framing — answers to every "how do I…" that used to send a founder hunting for someone who knows.</p>
         </article>
         <article class="tool">
-          <h3 class="tool__name">代理式編碼</h3>
-          <span class="tool__when">永遠不會被卡住的工程師</span>
-          <p class="tool__desc">用自然語言描述你想要的東西，AI 就能以一整支工程團隊的速度生成、測試、除錯並重構出可上線的程式碼。</p>
+          <h3 class="tool__name">Agentic coding</h3>
+          <span class="tool__when">The engineer who's never blocked</span>
+          <p class="tool__desc">Describe what you want in plain language; AI generates, tests, debugs, and refactors a production-grade codebase at the speed of a full engineering team.</p>
         </article>
         <article class="tool">
-          <h3 class="tool__name">工作流自動化</h3>
-          <span class="tool__when">隨時待命的營運團隊</span>
-          <p class="tool__desc">CRM 更新、每週報表、文件同步、法遵追蹤——把一家公司運轉起來的所有結締組織，全部設定為自動發生。</p>
+          <h3 class="tool__name">Workflow automation</h3>
+          <span class="tool__when">On-demand ops team</span>
+          <p class="tool__desc">CRM updates, weekly reports, doc sync, compliance tracking — the connective tissue of running a company, configured to happen automatically.</p>
         </article>
       </div>
 
       <div class="prose">
-        <p>這些工作不會自動駕駛地完成。指揮這些工具的創辦人，必須知道<em>怎麼</em>用，以及<em>何時</em>該用哪一項。本手冊接下來的章節，將一階段一階段地走過這套指揮藝術。</p>
+        <p>This work doesn't happen on autopilot. The founder orchestrating these tools needs to know <em>how</em> and <em>when</em> to apply each one. The rest of this playbook walks through that orchestration, stage by stage.</p>
       </div>
     </section>
 
     <!-- ====== Chapter 3 — Idea ====== -->
     <section class="section" id="ch03">
       <header class="chapter__head">
-        <span class="chapter__num">第 03 章 · 階段一</span>
-        <h2 class="chapter__title">構想階段</h2>
-        <p class="chapter__sub">這個階段最重要的紀律，是<em>還不要</em>動手蓋——直到證據足以支持這麼做。</p>
+        <span class="chapter__num">Chapter 03 · Stage One</span>
+        <h2 class="chapter__title">Idea Stage</h2>
+        <p class="chapter__sub">Where the discipline is <em>not</em> building until the evidence justifies it.</p>
       </header>
 
       <div class="prose">
-        <p>每一家新創都從同一個起點出發：一個讓創辦人念念不忘的問題。這個階段的工作是研究、客戶探索，以及誠實面對所有反向證據——這一切都應該<em>發生在</em>請 Claude Code 生成任何一行正式程式碼之前。</p>
+        <p>Every startup begins from the same place: a problem the founder can't stop thinking about. The work here is research, customer discovery, and the honest evaluation of disconfirming evidence — all <em>before</em> asking Claude Code to generate a single line of production code.</p>
       </div>
 
       <div class="stage">
         <div class="stage__block">
-          <p class="stage__block-label">目標</p>
-          <h3>以研究為導向的驗證</h3>
-          <p>在投入資源開發之前，先收集到扎實的證據：一個真實的問題確實存在，而你提出的解法確實對應到這個問題。</p>
+          <p class="stage__block-label">Goal</p>
+          <h3>Research-oriented validation</h3>
+          <p>Assemble solid evidence that a real problem exists, and that your proposed solution actually addresses it — before committing resources to building.</p>
         </div>
 
         <div class="stage__block">
-          <p class="stage__block-label">離開條件</p>
-          <h3>問題—解法契合度</h3>
+          <p class="stage__block-label">Exit criteria</p>
+          <h3>Problem-solution fit</h3>
           <ol>
-            <li>問題真實且具體——你能說出誰會遇到、多常遇到、嚴重到什麼程度。</li>
-            <li>你的解法回應的是驗證過程中浮現的問題，而不是你最初假設的那個問題。</li>
-            <li>你已有足夠訊號支撐後續開發——這些質性證據讓「投入做 MVP」是一個理性判斷，而不是一場信仰之躍。</li>
+            <li>The problem is real and specific — you can name who has it, how often, how severely.</li>
+            <li>Your solution addresses the problem validation revealed, not the one you originally assumed.</li>
+            <li>You have enough signal to justify building — qualitative evidence that committing to an MVP is reasoned, not an act of faith.</li>
           </ol>
         </div>
 
         <div class="stage__block stage__block--wide">
-          <p class="stage__block-label">需留意的挑戰</p>
-          <h3>AI 原生構想階段特有的三種失敗模式</h3>
+          <p class="stage__block-label">Challenges to watch</p>
+          <h3>Three failure modes unique to AI-native idea stages</h3>
           <div class="challenges">
             <div class="challenge">
               <span class="challenge__num">01</span>
-              <h4 class="challenge__title">把「開發」誤當成「驗證」</h4>
-              <p class="challenge__body">當打造原型變得毫不費力，創辦人最容易跳過最重要的工作：確認真的有人需要你即將打造的東西。原型本身不是證據，圍繞著原型展開的對話才是。</p>
+              <h4 class="challenge__title">Mistaking building for validating</h4>
+              <p class="challenge__body">When prototyping feels effortless, founders skip the most important work: confirming people actually need what they're about to build. A prototype is not evidence — the conversations it provokes are.</p>
             </div>
             <div class="challenge">
               <span class="challenge__num">02</span>
-              <h4 class="challenge__title">過早規模化</h4>
-              <p class="challenge__body">代理式編碼可以讓執行能力遠遠超前於「已被驗證的問題—解法契合度」。系統裡的智慧，本質上仍是你自己的判斷。請確保「理解」走在「動工」之前。</p>
+              <h4 class="challenge__title">Premature scaling</h4>
+              <p class="challenge__body">Agentic coding can scale execution far ahead of validated problem-solution fit. The intelligence in the system is yours. Keep sense-making ahead of building.</p>
             </div>
             <div class="challenge">
               <span class="challenge__num">03</span>
-              <h4 class="challenge__title">失去客觀性</h4>
-              <p class="challenge__body">你請 AI 為你的點子背書，它就會找出支持的證據。確認偏誤從此擁有一台研究引擎。解方是：把同樣的工具反過來指向自己——讓它替你的反方辯護。</p>
+              <h4 class="challenge__title">Loss of objectivity</h4>
+              <p class="challenge__body">Ask AI to validate your idea and it will find supporting evidence. Confirmation bias now has a research engine. The antidote: point the same tool in the opposite direction — let it argue against you.</p>
             </div>
           </div>
         </div>
 
         <div class="stage__block stage__block--wide">
-          <p class="stage__block-label">Claude 如何協助</p>
-          <h3>把假設磨利，再對它施加壓力測試</h3>
+          <p class="stage__block-label">How Claude can help</p>
+          <h3>Sharpen the hypothesis, then pressure-test it</h3>
           <ul>
-            <li><strong>用足夠的具體性定義問題。</strong>「合約審查很耗時」沒辦法被檢驗。「中型企業的法務團隊每份合約要花 3 天以上，因為紅線修訂都散落在 email 串裡」才可以。</li>
-            <li><strong>分層描繪競爭對手。</strong>直接競品、間接競品、潛在收購方、鄰近領域玩家——接著請 Claude 為每一個對手辯護，說明它為什麼會贏過你。</li>
-            <li><strong>設計訪談架構。</strong>問的是相關的「過去」，而不是想像中的「未來」。把「你會用這個嗎？」換成「上一次你遇到這個問題的時候，是怎麼處理的？」</li>
-            <li><strong>建立 5 場訪談的綜整迴圈。</strong>每進行完五場對話，讓 Claude Cowork 整理出兩份清單——支持的證據、反對的證據。如果第一份明顯比較長，反問自己：這個落差反映的是真實的資料，還是你內心的期待？</li>
-            <li><strong>只蓋一個核心互動。</strong>當你終於打開 Claude Code，請只完成你的解法所仰賴的那一個關鍵互動。把它放到五位已被驗證過的目標使用者面前。他們的反應，決定你接下來該不該繼續往下蓋。</li>
+            <li><strong>Define the problem with specificity.</strong> "Contract review takes too long" isn't testable. "In-house legal teams at mid-market companies spend 3+ days per contract because redlines live in email threads" is.</li>
+            <li><strong>Map competitors by tier.</strong> Direct, indirect, potential acquirers, adjacent players — then ask Claude to argue why each one beats you.</li>
+            <li><strong>Design the interview framework.</strong> Ask about the relevant past, not the imagined future. Replace "would you use this?" with "tell me about the last time you dealt with this problem."</li>
+            <li><strong>Run a 5-interview synthesis loop.</strong> After every five conversations, Claude Cowork produces two lists — evidence for, evidence against. If the first is much longer, ask whether that asymmetry reflects the data or your hopes.</li>
+            <li><strong>Build only one core interaction.</strong> When you finally open Claude Code, ship the single interaction your solution depends on. Put it in front of five validated targets. Their reactions decide whether you keep building.</li>
           </ul>
         </div>
       </div>
@@ -229,65 +229,65 @@
     <!-- ====== Chapter 4 — MVP ====== -->
     <section class="section" id="ch04">
       <header class="chapter__head">
-        <span class="chapter__num">第 04 章 · 階段二</span>
-        <h2 class="chapter__title">MVP 階段</h2>
-        <p class="chapter__sub">把已被驗證的問題，轉化為一個真實使用者願意用的可運作產品。</p>
+        <span class="chapter__num">Chapter 04 · Stage Two</span>
+        <h2 class="chapter__title">MVP Stage</h2>
+        <p class="chapter__sub">Translate a validated problem into a working product real users will actually use.</p>
       </header>
 
       <div class="prose">
-        <p>MVP 階段仍然是一場蒐集證據的演練——只是這次的證據改聚焦在<em>解法</em>上：一群可被指認的使用者，是否覺得這個產品有價值到願意回訪、願意付費、或願意推薦給其他人。而你現在如何蓋出這個產品，也決定了後續還能不能繼續往上長。</p>
+        <p>The MVP stage is still an evidence-gathering exercise — only now the evidence is about the <em>solution</em>: whether an identifiable group finds it valuable enough to return to it, pay for it, or tell others about it. How you build now also determines what's possible later.</p>
       </div>
 
       <div class="stage">
         <div class="stage__block">
-          <p class="stage__block-label">目標</p>
-          <h3>抵達真實證據的最短路徑</h3>
-          <p>用最小、最聚焦的迭代版本，產出真正能反映產品市場契合度（PMF）的證據——同時避免累積那種會持續複利的技術債。</p>
+          <p class="stage__block-label">Goal</p>
+          <h3>Fastest path to real evidence</h3>
+          <p>The smallest, most focused iteration of the idea that generates genuine evidence of product-market fit — without accruing the kind of technical debt that compounds.</p>
         </div>
 
         <div class="stage__block">
-          <p class="stage__block-label">離開條件</p>
-          <h3>真實訊號，而不是討喜的雜訊</h3>
-          <p>有一群明確、可被指認的使用者，覺得產品有價值到願意回訪（留存）、願意付費（營收）、或願意推薦給其他人（口碑）。Sean Ellis 的「如果失去這個產品我會非常失望」測試超過 40%，是一個實用的判準。</p>
+          <p class="stage__block-label">Exit criteria</p>
+          <h3>Genuine signal, not flattering noise</h3>
+          <p>A specific, identifiable group of users finds the product valuable enough to return to it (retention), pay for it (revenue), or tell others about it (referral). Sean Ellis's "very disappointed if I lost this" test above 40% is one useful litmus.</p>
         </div>
 
         <div class="stage__block stage__block--wide">
-          <p class="stage__block-label">需留意的挑戰</p>
-          <h3>當速度變得免費以後，新出現的失敗模式</h3>
+          <p class="stage__block-label">Challenges to watch</p>
+          <h3>The new failure modes when speed is free</h3>
           <div class="challenges">
             <div class="challenge">
               <span class="challenge__num">01</span>
-              <h4 class="challenge__title">代理式技術債</h4>
-              <p class="challenge__body">如果沒有把規格與架構約束寫在某個 AI 可以讀到的地方，每一次對話都會把底層決策重新推導一次。每個元件單獨看都能跑——但它們從一開始就不是為了被湊在一起而設計的。</p>
+              <h4 class="challenge__title">Agentic technical debt</h4>
+              <p class="challenge__body">Without specs and architectural constraints written down somewhere AI can read, each session re-derives foundational decisions. The pieces work; they were never designed to fit together.</p>
             </div>
             <div class="challenge">
               <span class="challenge__num">02</span>
-              <h4 class="challenge__title">假 PMF</h4>
-              <p class="challenge__body">朋友的捧場、Hacker News 的一日熱度、靠關係帶來的客戶——這些都不是 PMF。它們之中沒有一項能可靠地預測第六週還會剩下什麼。</p>
+              <h4 class="challenge__title">False product-market fit</h4>
+              <p class="challenge__body">Launch energy from friends, a Hacker News spike, or warm intros is not PMF. None of those reliably predict week six.</p>
             </div>
             <div class="challenge">
               <span class="challenge__num">03</span>
-              <h4 class="challenge__title">零阻力下的範疇擴張</h4>
-              <p class="challenge__body">每一個新加的功能，單獨看都站得住腳。湊在一起就一片混亂。請在動工之前先把範疇寫下來，並要求「使用者證據」才能修改它。</p>
+              <h4 class="challenge__title">Zero-friction scope creep</h4>
+              <p class="challenge__body">Each addition is defensible in isolation. Together they sprawl. Write your scope before building and require user evidence to amend it.</p>
             </div>
             <div class="challenge">
               <span class="challenge__num">04</span>
-              <h4 class="challenge__title">經驗不足造成的資安漏洞</h4>
-              <p class="challenge__body">代理式工具寫出來的程式碼會動，但不會自動具備安全性。在任何使用者碰到產品之前先做一次資安審查——這是負責任的最低門檻。</p>
+              <h4 class="challenge__title">Insecure by inexperience</h4>
+              <p class="challenge__body">Agentic tools produce code that works, not code that is inherently secure. A security review before any user touches the app is the minimum responsible threshold.</p>
             </div>
           </div>
         </div>
 
         <div class="stage__block stage__block--wide">
-          <p class="stage__block-label">Claude 如何協助</p>
-          <h3>在動程式碼之前，先定義架構與範疇</h3>
+          <p class="stage__block-label">How Claude can help</p>
+          <h3>Define architecture and scope before code</h3>
           <ul>
-            <li><strong>架構脈絡文件。</strong>打開 Claude（不是 Claude Code），描述你正在打造什麼、為誰服務、預期的規模有多大。把產出存成 <code>CLAUDE.md</code>——這份持久化的專案記憶，會被每一次 Claude Code 對話讀取。</li>
-            <li><strong>範疇先寫下來，要修改得有證據。</strong>明確寫出產品「會做什麼」、「刻意不做什麼」、以及「在什麼樣的使用者證據下才會新增功能」。這把問題從「我們該不該做這個？」轉成「使用者是否親口告訴我們，沒有這個就拿不到價值？」</li>
-            <li><strong>Claude Code 的對話樣板。</strong>開場帶上脈絡文件與當下任務，收尾留下一段簡短日誌。每場對話多花五分鐘寫文件，是抵抗架構漂移最便宜的保險。</li>
-            <li><strong>使用者出現之前先做資安審查。</strong>請 Claude 跑過身分驗證、Session 管理、輸入驗證、API 回應介面與相依套件漏洞。把發現的問題視為必須處理的待辦事項，而不是建議。</li>
-            <li><strong>在上線<em>之前</em>就建立衡量框架。</strong>定義留存基準、啟用條件、Day 7 / Day 30 指標目標，以及「什麼樣的數字算是假陽性」——在第一位使用者註冊之前就要想清楚。</li>
-            <li><strong>該轉就要轉。</strong>連續三輪迭代都沒有起色之後，做一次診斷：是否有某個區隔的反應與其他人不同？這是定位問題還是產品問題？要讓現在這個產品找到 PMF，前提需要是什麼？</li>
+            <li><strong>Architectural context document.</strong> Open Claude (not Claude Code) and describe what you're building, who it serves, and the scale you expect. Save the output as <code>CLAUDE.md</code> — persistent project memory every Claude Code session reads.</li>
+            <li><strong>Written scope, evidence to amend.</strong> What the product does, what it deliberately does not do, and what user evidence would justify a new feature. Moves the question from "should we build this?" to "have users told us they can't get value without it?"</li>
+            <li><strong>Session template for Claude Code.</strong> Open with the context doc and the specific task. Close with a brief log entry. Five minutes of documentation per session is cheap insurance against architectural drift.</li>
+            <li><strong>Security review before users.</strong> Run Claude across authentication, session handling, input validation, API response surface, and dependency vulnerabilities. Treat findings as required remediation, not suggestions.</li>
+            <li><strong>Measurement framework <em>before</em> launch.</strong> Define retention benchmarks, activation criteria, Day 7 / Day 30 targets, and what a false positive would look like — before the first user signs up.</li>
+            <li><strong>Pivot when the evidence demands it.</strong> After three iteration cycles without movement, run a diagnostic: is a segment responding differently? Is it a positioning or a product problem? What would have to be true for the current product to find PMF?</li>
           </ul>
         </div>
       </div>
@@ -296,67 +296,67 @@
     <!-- ====== Chapter 5 — Launch ====== -->
     <section class="section" id="ch05">
       <header class="chapter__head">
-        <span class="chapter__num">第 05 章 · 階段三</span>
-        <h2 class="chapter__title">上線階段</h2>
-        <p class="chapter__sub">你已經證明這個產品值得存在，接下來要證明這門生意值得長大。</p>
+        <span class="chapter__num">Chapter 05 · Stage Three</span>
+        <h2 class="chapter__title">Launch Stage</h2>
+        <p class="chapter__sub">Prove your product deserves to exist. Now prove your business deserves to grow.</p>
       </header>
 
       <div class="prose">
-        <p>上線，是真正抓到產品動能的公司仍可能潰散的階段——只要產品周圍的組織跟不上。這個階段的目標不是把自己從公司裡抽離，而是搭建出一套營運系統，讓你的注意力得以釋放，去處理只有創辦人才能做的決定。</p>
+        <p>Launch is where companies that found real product traction can still fall apart — if the organization around the product can't keep up. The goal isn't to remove yourself from the company. It's to build operational systems that free your attention for the decisions only a founder can make.</p>
       </div>
 
       <div class="stage">
         <div class="stage__block">
-          <p class="stage__block-label">目標</p>
-          <h3>從動能到可重複的引擎</h3>
-          <p>把早期訊號轉化為可持續的成長。把產品底下的基礎建設加固。並真正圍繞產品打造出一家公司。</p>
+          <p class="stage__block-label">Goal</p>
+          <h3>From traction to a repeatable engine</h3>
+          <p>Turn early signal into sustainable growth. Harden the infrastructure underneath the product. Build an actual company around it.</p>
         </div>
 
         <div class="stage__block">
-          <p class="stage__block-label">離開條件</p>
-          <h3>三個條件，缺一不可</h3>
+          <p class="stage__block-label">Exit criteria</p>
+          <h3>Three conditions, all true</h3>
           <ol>
-            <li><strong>成長是可重複、由通路驅動的。</strong>CAC、LTV、回收週期，都是你能說出口、也守得住的數字。</li>
-            <li><strong>產品撐得起正式流量的負載。</strong>基礎建設已加固，資安與法遵也已就位。</li>
-            <li><strong>營運不再卡在創辦人身上。</strong>流程已建立、自動化已上線，你不再是親自分流每一件事的人。</li>
+            <li><strong>Growth is repeatable and channel-driven.</strong> CAC, LTV, and payback are numbers you know and can defend.</li>
+            <li><strong>The product handles production workloads.</strong> Infrastructure hardened, security and compliance in order.</li>
+            <li><strong>Operations run without founder bottlenecks.</strong> Processes exist; automation is in place; you're no longer personally triaging.</li>
           </ol>
         </div>
 
         <div class="stage__block stage__block--wide">
-          <p class="stage__block-label">需留意的挑戰</p>
-          <h3>找到 PMF 之後反而把公司搞垮的原因</h3>
+          <p class="stage__block-label">Challenges to watch</p>
+          <h3>What kills companies that found PMF</h3>
           <div class="challenges">
             <div class="challenge">
               <span class="challenge__num">01</span>
-              <h4 class="challenge__title">技術債到期</h4>
-              <p class="challenge__body">MVP 階段的程式碼跑得夠用，足以證明產品概念可行。但正式流量、新功能、不斷增加的複雜度，會把先前的捷徑全部攤在陽光下。請在下一輪功能週期之前完成稽核、重構，並擴大測試覆蓋率。</p>
+              <h4 class="challenge__title">Technical debt comes due</h4>
+              <p class="challenge__body">The MVP codebase ran well enough to prove the product worked. Production traffic, new features, and growing complexity expose the shortcuts. Audit, refactor, and expand test coverage before the next feature cycle.</p>
             </div>
             <div class="challenge">
               <span class="challenge__num">02</span>
-              <h4 class="challenge__title">創辦人成為瓶頸</h4>
-              <p class="challenge__body">本來一小時就能拍板的決定，現在拖一週還決定不了。客服請求堆積如山，因為只有你知道答案。從「親自做事」轉變為「設計系統」，是整個生命週期裡最難跨過的一道坎。</p>
+              <h4 class="challenge__title">Founder becomes the bottleneck</h4>
+              <p class="challenge__body">Decisions that should take an hour now take a week. Support requests stack up because only you know the answer. The transition from doing the work to designing the systems is the hardest shift in the lifecycle.</p>
             </div>
             <div class="challenge">
               <span class="challenge__num">03</span>
-              <h4 class="challenge__title">資安與法遵從理論議題變成生死問題</h4>
-              <p class="challenge__body">當你已經擁有真實使用者、真實資料，桌上也擺著企業合約，MVP 時代可以延後處理的事項，現在已經變成負債。請在規模真的到來之前就做完系統性的審查——而不是事後補救。</p>
+              <h4 class="challenge__title">Security and compliance go from theoretical to existential</h4>
+              <p class="challenge__body">With real users, real data, and enterprise contracts on the table, what was deferrable at MVP is now a liability. Do the systematic review before scale arrives — not after.</p>
             </div>
             <div class="challenge">
               <span class="challenge__num">04</span>
-              <h4 class="challenge__title">在還沒準備好之前就擴張</h4>
-              <p class="challenge__body">新市場、新受眾會引入你還無法解讀的變數。盲目追逐它們，反而可能冷落了那群真正讓動能成為動能的早期使用者。</p>
+              <h4 class="challenge__title">Expansion before you're ready</h4>
+              <p class="challenge__body">New markets and new audiences introduce variables you can't yet interpret. Chasing them risks neglecting the original users who actually made the traction real.</p>
             </div>
           </div>
         </div>
 
         <div class="stage__block stage__block--wide">
-          <p class="stage__block-label">Claude 如何協助</p>
-          <h3>建立系統，取代創辦人的注意力</h3>
+          <p class="stage__block-label">How Claude can help</p>
+          <h3>Build the systems that replace founder attention</h3>
           <ul>
-            <li><strong>在問題複利之前先還掉技術債。</strong>Claude Code 跑架構稽核，Claude 為工作分流與排序，<code>CLAUDE.md</code> 把過去只存在你腦中的決策記錄下來。</li>
-            <li><strong>把資安當成持續工作流，而不是一次性專案。</strong>依照你切入的市場，做對應 SOC 2 / GDPR / HIPAA 的程式碼層級審查。產出：依優先順序排好的修復清單，加上企業採購團隊一定會索取的文件。</li>
-            <li><strong>一套輕量的產品作業系統。</strong>Sprint 節奏、最小規格樣板、Bug 分流決策樹、從真實資料源拉出的每週指標簡報——由 Claude 設計、跑在 Claude Cowork 上。</li>
-            <li><strong>創辦人瓶頸盤點。</strong>把所有目前需要經過你才能往下走的事項列出來，分成三類：<em>自動化</em>、<em>授權出去</em>、<em>只有創辦人能做</em>。然後為前兩類建立工作流邏輯。</li>
+            <li><strong>Remediate before it compounds.</strong> Claude Code runs the architectural audit; Claude triages and sequences the work; <code>CLAUDE.md</code> captures the decisions that previously lived only in your head.</li>
+            <li><strong>Make security a workstream, not a project.</strong> Code-level review oriented to SOC 2 / GDPR / HIPAA depending on your market. Output: prioritized remediation plus the documentation an enterprise procurement team will ask for.</li>
+            <li><strong>A lightweight product OS.</strong> Sprint cadence, minimum spec template, bug triage decision tree, weekly metrics brief pulled from your actual data sources — designed in Claude, run on Claude Cowork.</li>
+            <li><strong>Founder bottleneck audit.</strong> Inventory everything currently routed through you. Categorize into <em>automate</em>, <em>delegate</em>, and <em>founder-only</em>. Build the workflow logic for the first two.</li>
           </ul>
         </div>
       </div>
@@ -365,63 +365,63 @@
     <!-- ====== Chapter 6 — Scale ====== -->
     <section class="section" id="ch06">
       <header class="chapter__head">
-        <span class="chapter__num">第 06 章 · 階段四</span>
-        <h2 class="chapter__title">規模化階段</h2>
-        <p class="chapter__sub">從一場賭注變成一門生意。創辦人的角色，從建造者重新對焦為對外的經營者。</p>
+        <span class="chapter__num">Chapter 06 · Stage Four</span>
+        <h2 class="chapter__title">Scale Stage</h2>
+        <p class="chapter__sub">From a bet to a business. The founder's role re-centers from builder to public-facing executive.</p>
       </header>
 
       <div class="prose">
-        <p>到了規模化階段，把程式碼養大的工作，會與把整家公司養大的工作並肩同行。數千名使用者長成數百萬人，單一市場長成許多市場。「離開」這個階段不是某一個里程碑，而是一個門檻：公司的營運即使在創辦人逐漸不再直接掌舵的情況下，依然可持續。</p>
+        <p>At Scale, the work of growing the codebase is joined by the work of growing the company around it. Thousands of users become millions; one market becomes many. The exit isn't a single milestone but a threshold: the company is sustainable even as the founder is, increasingly, not directly running day-to-day operations.</p>
       </div>
 
       <div class="stage">
         <div class="stage__block">
-          <p class="stage__block-label">目標</p>
-          <h3>系統化、能守得住的成長</h3>
-          <p>透過長期累積出來的深度建立護城河——把領域知識嵌入產品、與使用者仰賴的工具深度整合、累積出競爭對手無法重現的系統資料。</p>
+          <p class="stage__block-label">Goal</p>
+          <h3>Systematic, defensible growth</h3>
+          <p>Build a moat through accumulated depth — domain expertise embedded in the product, deep integration with the tools users rely on, and proprietary system data competitors can't recreate.</p>
         </div>
 
         <div class="stage__block">
-          <p class="stage__block-label">離開條件</p>
-          <h3>三種樣貌，皆可被檢驗</h3>
+          <p class="stage__block-label">Exit criteria</p>
+          <h3>Three forms, all auditable</h3>
           <ol>
-            <li>達到不再需要外部資金的、可持續的獲利規模。</li>
-            <li>具備 IPO 準備度——成長、治理、法遵都能通過公開市場的審視。</li>
-            <li>被一位真正看懂你護城河的收購方買下。</li>
+            <li>Sustainable profitability at a scale that no longer requires external capital.</li>
+            <li>IPO readiness — growth, governance, and compliance all stand up to public-market scrutiny.</li>
+            <li>Acquisition by a buyer who recognizes the moat.</li>
           </ol>
         </div>
 
         <div class="stage__block stage__block--wide">
-          <p class="stage__block-label">需留意的挑戰</p>
-          <h3>規模化階段才會冒出來的新考驗</h3>
+          <p class="stage__block-label">Challenges to watch</p>
+          <h3>The new tests that arrive at Scale</h3>
           <div class="challenges">
             <div class="challenge">
               <span class="challenge__num">01</span>
-              <h4 class="challenge__title">營運層的授權</h4>
-              <p class="challenge__body">放手太快，關鍵決策會在缺乏創辦人脈絡的情況下做出；抓得太緊，你自己就會變成瓶頸。最困難的工作是把那些只存在你腦袋裡的組織知識編碼下來。</p>
+              <h4 class="challenge__title">Delegating the operational layer</h4>
+              <p class="challenge__body">Hand off too fast and critical decisions get made without founder context. Hold on too long and you become the bottleneck. The hard work is codifying the institutional knowledge that lives only in your head.</p>
             </div>
             <div class="challenge">
               <span class="challenge__num">02</span>
-              <h4 class="challenge__title">所有面向都要做到企業級</h4>
-              <p class="challenge__body">客戶不再只是評估你的產品——他們要看完整的文件、SLA、可觀測性、事件應變流程，以及一份能傳遞「組織已經夠成熟」訊號的可靠度保證。</p>
+              <h4 class="challenge__title">Enterprise-grade everything</h4>
+              <p class="challenge__body">Customers no longer evaluate only your product — they want documentation, SLAs, observability, incident response, and reliability guarantees that signal organizational maturity.</p>
             </div>
             <div class="challenge">
               <span class="challenge__num">03</span>
-              <h4 class="challenge__title">打造一個真正的 GTM 部門</h4>
-              <p class="challenge__body">「創辦人親自衝」是有上限的。多數新創就在規模化階段撞到這個上限。你會需要市場區隔、訊息架構、銷售腳本，以及一套面向你從沒賣過的受眾的品牌語氣。</p>
+              <h4 class="challenge__title">Building a real GTM function</h4>
+              <p class="challenge__body">Founder hustle has a ceiling. Most startups hit it at Scale. You'll need market segmentation, messaging architecture, sales playbooks, and a brand voice for audiences you've never sold to before.</p>
             </div>
           </div>
         </div>
 
         <div class="stage__block stage__block--wide">
-          <p class="stage__block-label">Claude 如何協助</p>
-          <h3>把優勢複利成一條護城河</h3>
+          <p class="stage__block-label">How Claude can help</p>
+          <h3>Compound advantages into a moat</h3>
           <ul>
-            <li><strong>把創辦人的知識外化。</strong>把產業術語、法規地雷、邊緣案例，還有那些「表面答案行不通，因為……」的判斷，全部寫進可被搜尋的脈絡裡。幾個月累積下來，就是一份通用型 AI 怎麼也比不過的專有知識底層。</li>
-            <li><strong>把領域邊緣案例編碼進產品。</strong>你的測試套件，會變成一張你的護城河地圖。每當競爭對手會做錯的場景出現，就把它補進案例庫。</li>
-            <li><strong>讓使用者資料複利成可守住的優勢。</strong>數千名使用者在你的產品裡持續打磨自己工作流所留下的行為指紋，是隨時間鎖死、無法被重新製造的東西。找出訊號最強的模式，並設計把「使用」轉化為「系統性改進」的迴圈。</li>
-            <li><strong>用深度創造工作流黏著度，而不是用摩擦力。</strong>原生整合、API、Webhook、SDK——讓客戶<em>站在</em>你的產品上開發，而不是只是用你的產品。這是最深層的黏著。</li>
-            <li><strong>啟動 GTM 引擎。</strong>Claude 草擬市場區隔、訊息架構、面向投資人的敘事；Claude Cowork 運轉內容生產線、外展節奏、業務管道報表；Claude Code 打造在你忙著開董事會時也能成交的 Demo 環境與整合文件。</li>
+            <li><strong>Externalize founder knowledge.</strong> Capture industry jargon, regulatory gotchas, edge cases, and "the obvious answer doesn't work because…" into a searchable context. Over months, a proprietary knowledge substrate no generalist AI can match.</li>
+            <li><strong>Encode domain edge cases into the product.</strong> Your test suite becomes a map of your moat. Every time a competitor would get it wrong, add the case.</li>
+            <li><strong>Compound user data into a defensible advantage.</strong> The behavioral fingerprint of thousands of users refining their workflows inside your product is time-locked and impossible to recreate. Identify the highest-signal patterns and design the loop that turns usage into systematic improvement.</li>
+            <li><strong>Create workflow lock-in via depth, not lock-in via friction.</strong> Native integrations, APIs, webhooks, SDKs — let customers build <em>on top of</em> your product, not just use it. The deepest form of stickiness.</li>
+            <li><strong>Bootstrap the GTM engine.</strong> Claude drafts the segmentation, messaging, and investor-facing narrative; Claude Cowork runs the content pipelines, outbound sequences, and pipeline reporting; Claude Code builds the demo environments and integration docs that close deals while you're in board meetings.</li>
           </ul>
         </div>
       </div>
@@ -430,80 +430,80 @@
     <!-- ====== Chapter 7 ====== -->
     <section class="section" id="ch07">
       <header class="chapter__head">
-        <span class="chapter__num">第 07 章</span>
-        <h2 class="chapter__title">工作未變，規則已改</h2>
-        <p class="chapter__sub">創辦人的工作沒有變，變的是走完這份工作的路徑。</p>
+        <span class="chapter__num">Chapter 07</span>
+        <h2 class="chapter__title">Same job, new rules</h2>
+        <p class="chapter__sub">The founder's job hasn't changed. The path to do it has.</p>
       </header>
 
       <div class="prose">
-        <p>找到一個真實的問題。打造一個能解決它的東西。把它規模化成一家真正重要的公司。工作本身沒有改變。真正不同的，是壓縮：過去要好幾個月的驗證循環，現在用一個下午就能跑完。可運作的原型不再需要一位手裡握著對的技術棧的共同創辦人，只需要一個清楚定義的問題，加上幾場與編碼代理高度聚焦的對話。上線準備變成一條持續推進的工作流，而不是上線前夕的兵荒馬亂。規模化階段的營運重量被交給 AI 承擔，把你的團隊從繁瑣中釋放出來，去做那些終將成為你護城河的判斷題。</p>
+        <p>Find a real problem. Build something that solves it. Scale it into a company that matters. The work is unchanged. What's different is the compression: validation cycles that took months now take afternoons. A working prototype requires a clear problem and a few focused sessions with a coding agent — not a co-founder with the right stack. Launch readiness becomes a continuous workstream, not a pre-launch scramble. Scale-stage operational weight gets handed off to AI, freeing your team for the judgment calls that become your moat.</p>
       </div>
 
       <blockquote class="pullquote">
-        瓶頸不再是你能蓋出什麼，而是你選擇蓋什麼。
-        <span class="pullquote__attr">— 創辦人的行動手冊，第 7 章</span>
+        The bottlenecks are no longer what you can build, but what you choose to build.
+        <span class="pullquote__attr">— The Founder's Playbook, Ch. 7</span>
       </blockquote>
     </section>
 
     <!-- ====== Resources ====== -->
     <section class="section" id="resources">
       <header class="chapter__head">
-        <span class="chapter__num">第 08 章</span>
-        <h2 class="chapter__title">延伸資源</h2>
-        <p class="chapter__sub">從 Anthropic 的資料庫，往下一步走。</p>
+        <span class="chapter__num">Chapter 08</span>
+        <h2 class="chapter__title">Resources</h2>
+        <p class="chapter__sub">Where to go next from Anthropic's library.</p>
       </header>
 
-      <h3 style="font-family: var(--font-display); font-weight: 500; font-size: 1.15rem; margin: 2rem 0 0.5rem;">用 Claude 開發</h3>
+      <h3 style="font-family: var(--font-display); font-weight: 500; font-size: 1.15rem; margin: 2rem 0 0.5rem;">Building with Claude</h3>
       <div class="resources">
         <a class="resource" href="https://docs.claude.com/en/docs/claude-code/overview" target="_blank" rel="noopener">
           <span class="resource__num">01</span>
           <span>
-            <span class="resource__title">Claude Code 文件</span>
-            <span class="resource__desc">從安裝到進階代理工作流程，一次涵蓋。</span>
+            <span class="resource__title">Claude Code docs</span>
+            <span class="resource__desc">From installation to advanced agentic workflows.</span>
           </span>
           <span class="resource__arrow">↗</span>
         </a>
         <a class="resource" href="https://www.anthropic.com/engineering/claude-code-best-practices" target="_blank" rel="noopener">
           <span class="resource__num">02</span>
           <span>
-            <span class="resource__title">Claude Code 最佳實務</span>
-            <span class="resource__desc">脈絡管理、權限設定、規劃與驗證。</span>
+            <span class="resource__title">Claude Code best practices</span>
+            <span class="resource__desc">Context management, permissions, planning, verification.</span>
           </span>
           <span class="resource__arrow">↗</span>
         </a>
         <a class="resource" href="https://docs.claude.com/en/docs/claude-code/memory" target="_blank" rel="noopener">
           <span class="resource__num">03</span>
           <span>
-            <span class="resource__title">使用 CLAUDE.md 檔案</span>
-            <span class="resource__desc">設定持久化的專案記憶——MVP 階段必讀。</span>
+            <span class="resource__title">Using CLAUDE.md files</span>
+            <span class="resource__desc">Configure persistent project memory — essential MVP-stage reading.</span>
           </span>
           <span class="resource__arrow">↗</span>
         </a>
         <a class="resource" href="https://claude.com/resources/tutorials" target="_blank" rel="noopener">
           <span class="resource__num">04</span>
           <span>
-            <span class="resource__title">教學資源庫</span>
-            <span class="resource__desc">可搜尋、手把手的任務式教學。</span>
+            <span class="resource__title">Tutorials library</span>
+            <span class="resource__desc">Searchable, hands-on walkthroughs for specific tasks.</span>
           </span>
           <span class="resource__arrow">↗</span>
         </a>
       </div>
 
-      <h3 style="font-family: var(--font-display); font-weight: 500; font-size: 1.15rem; margin: 2.5rem 0 0.5rem;">計畫與社群</h3>
+      <h3 style="font-family: var(--font-display); font-weight: 500; font-size: 1.15rem; margin: 2.5rem 0 0.5rem;">Programs &amp; community</h3>
       <div class="resources">
         <a class="resource" href="https://www.anthropic.com/startups" target="_blank" rel="noopener">
           <span class="resource__num">05</span>
           <span>
-            <span class="resource__title">Anthropic 新創計畫</span>
-            <span class="resource__desc">為已獲創投支持的新創公司提供 API 點數、頂級速率限制與創辦人活動。</span>
+            <span class="resource__title">Anthropic Startups Program</span>
+            <span class="resource__desc">API credits, top-tier rate limits, and founder events for VC-backed startups.</span>
           </span>
           <span class="resource__arrow">↗</span>
         </a>
         <a class="resource" href="https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf" target="_blank" rel="noopener">
           <span class="resource__num">06</span>
           <span>
-            <span class="resource__title">完整 36 頁 PDF</span>
-            <span class="resource__desc">原文出版品，包含所有創辦人故事與案例研究。</span>
+            <span class="resource__title">The full 36-page PDF</span>
+            <span class="resource__desc">Original publication with all founder stories and case studies.</span>
           </span>
           <span class="resource__arrow">↗</span>
         </a>
@@ -511,8 +511,8 @@
 
       <div class="closing">
         <span class="closing__rule" aria-hidden="true"></span>
-        <p class="closing__title">「從一場賭注，變成一門生意。」</p>
-        <p class="closing__sub">當成長是系統性的、護城河經得起檢視、組織具備可持續性——這時候，恭喜你，是發自內心的。</p>
+        <p class="closing__title">"From a bet to a business."</p>
+        <p class="closing__sub">When growth is systematic, the moat stands up under scrutiny, and the organization is sustainable — congratulations are in order.</p>
       </div>
     </section>
 
@@ -521,11 +521,11 @@
 
 <footer class="site-footer">
   <div class="site-footer__inner">
-    <p>精華導讀版 · 以善意整理自<a href="https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf" target="_blank" rel="noopener">原文 PDF</a>，內容版權皆屬 Anthropic 所有。</p>
-    <p><a href="https://github.com/tingwei161803/anthropic-the-founder-playbook" target="_blank" rel="noopener">GitHub</a> 開源 · 提供語言：<a href="../" data-lang-link>English</a> &amp; <a href="./" aria-current="true">繁體中文</a></p>
+    <p>Reader's edition · summarized in good faith from <a href="https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf" target="_blank" rel="noopener">the original PDF</a> · all rights to the underlying content remain with Anthropic.</p>
+    <p>Open source on <a href="https://github.com/tingwei161803/anthropic-the-founder-playbook" target="_blank" rel="noopener">GitHub</a> · Available in <a href="./" aria-current="true">English</a> &amp; <a href="./zh-Hant/" data-lang-link>繁體中文</a></p>
   </div>
 </footer>
 
-<script src="../assets/app.js" defer></script>
+<script src="assets/app.js" defer></script>
 </body>
 </html>
