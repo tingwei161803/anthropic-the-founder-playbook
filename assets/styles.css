@@ -725,7 +725,6 @@ body::before {
   font-family: var(--font-display);
   font-weight: 500;
   font-size: 1rem;
-  white-space: nowrap;
 }
 .decision td { color: var(--ink-soft); line-height: 1.5; }
 .decision tbody tr:last-child th, .decision tbody tr:last-child td { border-bottom: 0; }
