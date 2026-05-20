@@ -53,11 +53,14 @@
     });
   }
 
-  /* Preserve hash when switching language or edition so readers stay on the same chapter */
+  /* Switching language or edition: on wide screens carry the hash so the reader
+     stays on the same chapter (the TOC is pinned alongside). On mobile that lands
+     mid-page and feels like a glitch, so let the clean link load at the top. */
   document.querySelectorAll('[data-lang-link], [data-version-link]').forEach((a) => {
     a.addEventListener('click', (e) => {
       const hash = window.location.hash;
-      if (hash) {
+      const keepChapter = hash && window.matchMedia('(min-width: 961px)').matches;
+      if (keepChapter) {
         e.preventDefault();
         window.location.href = a.getAttribute('href') + hash;
       }
