@@ -177,6 +177,14 @@ body::before {
   color: #F5C451; /* warm gold when the button inverts on hover */
   transform: scale(1.15) rotate(-8deg);
 }
+.ghstar__count {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  margin-left: 0.2rem;
+  padding-left: 0.55rem;
+  border-left: 1px solid color-mix(in srgb, currentColor 22%, transparent);
+}
+.ghstar__count[hidden] { display: none; }
 
 /* ---------- Layout ---------- */
 .layout {
@@ -450,6 +458,14 @@ body::before {
 }
 /* Keep the accent underline off product chips when they sit inside prose links */
 .prose a .product { background: none; padding: 0; color: inherit; }
+/* Light-up entrance: chips start with no fill, then the tint animates in on scroll */
+.product.is-armed { background-color: transparent; }
+.product.is-lit { animation: productLight 0.55s ease both; }
+@keyframes productLight {
+  0%   { background-color: transparent; }
+  55%  { background-color: color-mix(in srgb, var(--accent) 30%, transparent); }
+  100% { background-color: var(--accent-tint); }
+}
 
 /* ---------- Pull quote ---------- */
 .pullquote {

@@ -74,6 +74,7 @@
       '.prose, .stage__block > p:not(.stage__block-label), .stage__block ul, .stage__block ol, .tool__desc, .challenge__body'
     );
 
+    const chips = [];
     roots.forEach((root) => {
       const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
         acceptNode(node) {
@@ -100,14 +101,66 @@
           span.className = 'product';
           span.textContent = m[0];
           frag.appendChild(span);
+          chips.push(span);
           last = m.index + m[0].length;
         }
         if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
         node.parentNode.replaceChild(frag, node);
       });
     });
+
+    animateChips(chips);
   }
+
+  /* Light up each product chip as it scrolls into view. Falls back to the
+     static filled state when motion is reduced or IntersectionObserver is absent. */
+  function animateChips(chips) {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!chips.length || reduce || !('IntersectionObserver' in window)) return;
+
+    chips.forEach((chip) => chip.classList.add('is-armed'));
+    const io = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.remove('is-armed');
+        entry.target.classList.add('is-lit');
+        obs.unobserve(entry.target);
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.15 });
+    chips.forEach((chip) => io.observe(chip));
+  }
+
+  /* Show the live GitHub star count in the header button. */
+  function loadStarCount() {
+    const el = document.querySelector('.ghstar__count');
+    if (!el) return;
+    const REPO = 'tingwei161803/anthropic-the-founder-playbook';
+    const CACHE_KEY = 'fp_gh_stars';
+    const TTL = 60 * 60 * 1000; // 1 hour
+    const render = (n) => {
+      el.textContent = n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k' : String(n);
+      el.hidden = false;
+    };
+
+    try {
+      const cached = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
+      if (cached && Date.now() - cached.t < TTL) render(cached.n);
+    } catch (e) { /* private mode / bad cache — ignore */ }
+
+    fetch(`https://api.github.com/repos/${REPO}`, { headers: { Accept: 'application/vnd.github+json' } })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        if (!data || typeof data.stargazers_count !== 'number') return;
+        render(data.stargazers_count);
+        try {
+          localStorage.setItem(CACHE_KEY, JSON.stringify({ n: data.stargazers_count, t: Date.now() }));
+        } catch (e) { /* storage unavailable — count still shows this session */ }
+      })
+      .catch(() => { /* offline or rate-limited — leave the button without a count */ });
+  }
+
   highlightProducts();
+  loadStarCount();
 
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', onScroll);
