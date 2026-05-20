@@ -53,8 +53,8 @@
     });
   }
 
-  /* Preserve hash when switching languages so users land on the same chapter */
-  document.querySelectorAll('[data-lang-link]').forEach((a) => {
+  /* Preserve hash when switching language or edition so readers stay on the same chapter */
+  document.querySelectorAll('[data-lang-link], [data-version-link]').forEach((a) => {
     a.addEventListener('click', (e) => {
       const hash = window.location.hash;
       if (hash) {

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Founder's Playbook · Full Edition</title>
+<meta name="description" content="The full section-by-section reader's edition of Anthropic's The Founder's Playbook — every stage, exercise, and founder story for building an AI-native startup.">
+<meta property="og:title" content="The Founder's Playbook · Full Edition">
+<meta property="og:description" content="The comprehensive edition of Anthropic's playbook for AI-native founders — Idea, MVP, Launch, and Scale, section by section.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,30..100;1,9..144,300..600,30..100&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+TC:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='10' height='10' x='3' y='3' fill='%23CC785C' transform='rotate(45 8 8)'/%3E%3Crect width='4' height='4' x='6' y='6' fill='%23F0EEE6' transform='rotate(45 8 8)'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="#cover" aria-label="The Founder's Playbook home">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span>The Founder's Playbook</span>
+      <span class="brand__sep">·</span>
+      <span class="brand__sub">Full Edition</span>
+    </a>
+    <div class="site-header__actions">
+      <a class="ghstar" href="https://github.com/tingwei161803/anthropic-the-founder-playbook" target="_blank" rel="noopener" aria-label="Star this project on GitHub">
+        <svg class="ghstar__logo" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+        <span class="ghstar__text">Star on GitHub</span>
+        <span class="ghstar__star" aria-hidden="true">★</span>
+        <span class="ghstar__count" hidden></span>
+      </a>
+      <nav class="ver-switch" aria-label="Edition">
+        <a href="../" data-version-link>Reader's</a>
+        <a href="./" aria-current="true">Full</a>
+      </nav>
+      <nav class="lang-switch" aria-label="Language">
+        <a href="./" aria-current="true">EN</a>
+        <a href="./zh-Hant/" data-lang-link>繁中</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ============ TOC ============ -->
+  <aside class="toc" aria-label="Contents">
+    <button class="toc__toggle" type="button">Contents</button>
+    <div class="toc__panel">
+      <p class="toc__label">Contents</p>
+      <ol class="toc__list">
+        <li class="toc__item" data-target="cover"><a href="#cover"><span class="toc__num">00</span>Cover</a></li>
+        <li class="toc__item" data-target="ch01"><a href="#ch01"><span class="toc__num">01</span>The lifecycle, rebooted</a></li>
+        <li class="toc__item" data-target="ch02"><a href="#ch02"><span class="toc__num">02</span>What it means to be a founder</a></li>
+        <li class="toc__item" data-target="ch03"><a href="#ch03"><span class="toc__num">03</span>Idea Stage</a></li>
+        <li class="toc__item" data-target="ch04"><a href="#ch04"><span class="toc__num">04</span>MVP Stage</a></li>
+        <li class="toc__item" data-target="ch05"><a href="#ch05"><span class="toc__num">05</span>Launch Stage</a></li>
+        <li class="toc__item" data-target="ch06"><a href="#ch06"><span class="toc__num">06</span>Scale Stage</a></li>
+        <li class="toc__item" data-target="ch07"><a href="#ch07"><span class="toc__num">07</span>Same job, new rules</a></li>
+        <li class="toc__item" data-target="resources"><a href="#resources"><span class="toc__num">08</span>Resources</a></li>
+      </ol>
+
+      <div class="toc__cta">
+        <p class="toc__cta-label">Shorter on time?</p>
+        <p class="toc__cta-title">Read the condensed edition</p>
+        <a class="toc__cta-link" href="../" data-version-link>Reader's edition</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main">
+
+    <!-- ====== Cover / Hero ====== -->
+    <section class="section hero" id="cover">
+      <p class="hero__eyebrow">An Anthropic Publication · May 2026 · Full Edition</p>
+      <h1 class="hero__title">The Founder's <em>Playbook</em></h1>
+      <p class="hero__lede">Building an AI-native startup, stage by stage — the complete walkthrough, with every exercise and founder story.</p>
+
+      <div class="hero__meta">
+        <div class="hero__meta-item">
+          <span class="hero__meta-label">Publisher</span>
+          <span class="hero__meta-value">Anthropic</span>
+        </div>
+        <div class="hero__meta-item">
+          <span class="hero__meta-label">Length</span>
+          <span class="hero__meta-value">36 pages · 7 chapters</span>
+        </div>
+        <div class="hero__meta-item">
+          <span class="hero__meta-label">Audience</span>
+          <span class="hero__meta-value">AI-native founders</span>
+        </div>
+        <div class="hero__meta-item">
+          <span class="hero__meta-label">Edition</span>
+          <span class="hero__meta-value">Full · section by section</span>
+        </div>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#ch01">
+          Start reading <span class="btn__arrow">→</span>
+        </a>
+        <a class="btn btn--secondary" href="https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf" target="_blank" rel="noopener">
+          Download original PDF
+        </a>
+      </div>
+
+      <p class="hero__more">
+        <strong>This is the full edition.</strong>
+        <span>Prefer a quick overview first?</span>
+        <a href="../" data-version-link>Read the condensed reader's edition</a>
+      </p>
+    </section>
+
+    <!-- ====== Chapter 1 ====== -->
+    <section class="section" id="ch01">
+      <header class="chapter__head">
+        <span class="chapter__num">Chapter 01</span>
+        <h2 class="chapter__title">The startup lifecycle, rebooted for 2026</h2>
+        <p class="chapter__sub">AI hasn't just sped up the work — it has redrawn the map between idea and exit.</p>
+      </header>
+
+      <div class="prose">
+        <p class="dropcap">AI is reshaping how startups get built. Founders who have never written a line of code are shipping production applications today, and the lean ten-person unicorn has gone from a scrappy underdog story to a deliberate plan of action. The historic prerequisites of starting a company have dissolved.</p>
+        <p>In 2026, AI can write production code, run market research, synthesize a competitive landscape, draft investor materials, and automate operational workflows. By erasing the once-steep learning curves that even experienced technical founders faced when integrating the tools and systems a startup needs, AI has, above all, leveled the playing field around who can launch a company at all. A good idea now carries founders further than ever, because agentic coding compresses what used to take a team of engineers into work a founder can ship alone.</p>
+        <p>The traditional growth arc assumed the path from idea to scale was <strong>validate → raise → hire → build → raise again → repeat</strong>. AI has erased the expectation that each new phase requires a bigger team, a different skill set, and a fresh funding round. This playbook re-maps the four core stages — <strong>Idea, MVP, Launch, and Scale</strong> — for an era when AI is core to both your technical and your organizational development: what each stage looks like, which tools fit each phase, and how founders use them to compress the timeline between idea and exit.</p>
+      </div>
+
+      <blockquote class="pullquote">
+        AI has erased the expectation that each new phase requires a bigger team, a different skill set, and a fresh funding round.
+        <span class="pullquote__attr">— The Founder's Playbook, Ch. 1</span>
+      </blockquote>
+    </section>
+
+    <!-- ====== Chapter 2 ====== -->
+    <section class="section" id="ch02">
+      <header class="chapter__head">
+        <span class="chapter__num">Chapter 02</span>
+        <h2 class="chapter__title">What it means to be a founder is changing</h2>
+        <p class="chapter__sub">From individual contributor to orchestrator of agents.</p>
+      </header>
+
+      <div class="prose">
+        <p>Founders used to be defined by what they could personally do: technical founders wrote code, non-technical founders ran business operations and closed deals. The models, systems, and AI agents now available have dissolved the wall between "people who can build" and "people with ideas worth building." Someone with no engineering background can ship production software; a technically minded founder with little business experience can produce a go-to-market strategy, a financial model, and a polished pitch deck.</p>
+        <p>Historically, founders spent most of their time in execution mode — writing code, managing people, handling day-to-day operations. In an AI-native startup the founder's role becomes far less individual contributor and much more orchestrator of agents: specialized AI assistants that read files, run commands, execute code, and browse the web. Founder attention shifts up the stack toward the higher-order work of generating ideas and directing the systems that carry them out. The most consequential effect is that subject-matter experts who never had an engineering pipeline can now build — so you get startups created by people with radically different lived experience, solving problems the traditional tech-founder pipeline never prioritized.</p>
+      </div>
+
+      <h3 class="section-h">AI tool capabilities for lean startups</h3>
+      <div class="prose">
+        <p>The traditional model assumed you hired engineers to build, salespeople to sell, and ops people to run the business — headcount was treated as a sign of momentum and maturity. Three categories of AI capability now let a lean startup function like a much larger organization.</p>
+      </div>
+
+      <div class="tools">
+        <article class="tool">
+          <h3 class="tool__name">Conversational intelligence &amp; research</h3>
+          <span class="tool__when">On-call expert for every domain</span>
+          <p class="tool__desc">Every "how do I set up payroll / plan a sprint / draft an investor memo" that used to mean finding someone who knows. Three modes: <strong>deep research</strong> (competitive analysis, market sizing, financial modeling); <strong>document drafting</strong> (pitch decks, case studies, investor memos, PRDs); and a <strong>strategic thinking partner</strong> (devil's-advocate analysis, pre-mortems, scenario planning, roadmap optimization).</p>
+        </article>
+        <article class="tool">
+          <h3 class="tool__name">Agentic coding</h3>
+          <span class="tool__when">The engineer who's never blocked</span>
+          <p class="tool__desc">Describe what you want in plain language and AI generates, tests, debugs, and refactors a production-grade codebase at the speed of a full engineering team. The timeline from "I have an idea" to "I have a product" has compressed — the founder's role now centers on what to build and why, while AI handles the construction of infrastructure ready for real users.</p>
+        </article>
+        <article class="tool">
+          <h3 class="tool__name">Workflow automation</h3>
+          <span class="tool__when">On-demand ops team</span>
+          <p class="tool__desc">Scheduling, CRM updates, weekly reports, keeping documentation current, tracking compliance — the connective tissue between the tools a company runs on. Claude Cowork integrates with those interconnected systems (project management, communication stack, data sources) without anyone having to build and maintain the integrations.</p>
+        </article>
+      </div>
+
+      <h3 class="section-h">Timing and orchestration are everything</h3>
+      <div class="prose">
+        <p>A founder who harnesses AI's research, automation, and agentic coding can run a startup with far more leverage than its headcount suggests, and can spend the majority of their time and bandwidth on the work that actually matters. But none of this happens on autopilot. The founder orchestrating these tools needs to know <em>how</em> and <em>when</em> to apply each one — the rest of this playbook walks through that orchestration, stage by stage.</p>
+      </div>
+
+      <blockquote class="pullquote">
+        The founder's attention shifts up the stack — from execution to direction.
+        <span class="pullquote__attr">— The Founder's Playbook, Ch. 2</span>
+      </blockquote>
+    </section>
+
+    <!-- ====== Chapter 3 — Idea ====== -->
+    <section class="section" id="ch03">
+      <header class="chapter__head">
+        <span class="chapter__num">Chapter 03 · Stage One</span>
+        <h2 class="chapter__title">Idea Stage</h2>
+        <p class="chapter__sub">Where idea meets reality — and the discipline is <em>not</em> building until the evidence justifies it.</p>
+      </header>
+
+      <div class="prose">
+        <p>Every startup founder starts from the same place: a problem they can't stop thinking about. The work in this stage is research, customer discovery, competitive analysis, and the honest evaluation of disconfirming evidence — all <em>before</em> asking Claude Code to generate your first line of production code. Practically, the Idea stage is a sequence of questions: Is this problem real, specific, and frequent enough to build around? Who exactly has it, and is that a market? Is anyone else solving it, and how well? What would a solution actually need to do — and does my idea do that? Those add up to one ultimate question: <strong>is this worth building?</strong></p>
+      </div>
+
+      <div class="stage">
+        <div class="stage__block">
+          <p class="stage__block-label">Goal</p>
+          <h3>Research-oriented validation</h3>
+          <p>Assemble solid evidence that a real problem exists, and that your proposed solution actually addresses it — before committing resources to building.</p>
+        </div>
+
+        <div class="stage__block">
+          <p class="stage__block-label">Exit criteria</p>
+          <h3>Problem-solution fit</h3>
+          <ol>
+            <li>The problem is real and specific — you can name who has it, how often, how severely, and what they currently do about it.</li>
+            <li>Your solution addresses the problem validation revealed, not the one you originally assumed.</li>
+            <li>You have enough signal to justify building — qualitative evidence that committing to an MVP is a reasoned decision, not an act of faith.</li>
+          </ol>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Challenges to watch</p>
+          <h3>Three failure modes unique to AI-native idea stages</h3>
+          <div class="challenges">
+            <div class="challenge">
+              <span class="challenge__num">01</span>
+              <h4 class="challenge__title">Mistaking building for validating</h4>
+              <p class="challenge__body">When technical blockers are lifted, an impassioned founder risks skipping the most important work: confirming people genuinely need what they're about to build. A working prototype is easy to mistake for evidence — but it isn't. It's a pressure-testing prop for conversations, and those conversations are the real evidence. Even before agentic coding, <strong>42% of startups failed because they built something nobody wanted</strong>; as the distance between "I have an idea" and "I have a product" collapses, that risk only climbs.</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">02</span>
+              <h4 class="challenge__title">Premature scaling</h4>
+              <p class="challenge__body">When building is effortless and instant, you can scale execution far ahead of what the business has validated. Agentic coding will generate, test, and refactor a codebase around a fundamentally flawed premise with the same enthusiasm it brings to a great idea. The intelligence in the system is yours; the prime directive is keeping your sense-making ahead of your building.</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">03</span>
+              <h4 class="challenge__title">Loss of objectivity</h4>
+              <p class="challenge__body">Ask AI for evidence supporting what you already believe and it will find it — confirmation bias now comes with a research engine. A founder who isn't asking hard questions can construct an elaborate, well-researched case for a bad idea while feeling fully confident they're performing due diligence. The antidote is the same tool pointed in the opposite direction: have it pressure-test the idea as thoroughly as it would validate one.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-h">How Claude can help Idea stage founders</h3>
+      <div class="prose">
+        <p>The Idea stage is fundamentally a research and validation exercise, which means reaching for the tools that help you think rigorously before writing any code. The three product surfaces share the same Claude underneath; what changes is the workspace around it.</p>
+      </div>
+
+      <table class="decision">
+        <caption>The three surfaces share the same Claude underneath — what changes is the workspace around it.</caption>
+        <thead>
+          <tr><th scope="col">If the task is…</th><th scope="col">Reach for</th><th scope="col">Why</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">A question, a rewrite, a quick brainstorm</th>
+            <td data-label="Reach for">Claude</td>
+            <td data-label="Why">Fast, conversational, no setup.</td>
+          </tr>
+          <tr>
+            <th scope="row">Research, analysis, or a finished document built from your files and systems</th>
+            <td data-label="Reach for">Claude Cowork</td>
+            <td data-label="Why">Folder access, connectors, skills, scheduled runs.</td>
+          </tr>
+          <tr>
+            <th scope="row">Writing, testing, or shipping software</th>
+            <td data-label="Reach for">Claude Code</td>
+            <td data-label="Why">Codebase access, diffs, git, dev environments.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="stage">
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Define &amp; pressure-test the problem</p>
+          <h3>Sharpen the hypothesis until it's testable</h3>
+          <ul>
+            <li><strong>Force specificity.</strong> "Contract review takes too long" can't be tested. "In-house legal teams at mid-market companies spend 3+ days per contract because redlines live across email threads rather than a single version-controlled document" can.</li>
+            <li><strong>Argue the other side.</strong> Ask Claude to make the case against your idea — surfacing negative market signals, failed competitors, and customer behavior patterns a supportive synthesis would quietly deprioritize. Using Claude as a structured devil's advocate is a core use case at every stage of the life cycle.</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Market research &amp; competitive landscape</p>
+          <h3>Map the field before you commit</h3>
+          <ul>
+            <li><strong>Beat competitor neglect.</strong> Founders tend to underweight what others are doing. Ask Claude to make the most compelling argument for why each competitor would win — by tier: direct, indirect, potential acquirers, adjacent players — then argue the genuine threat, not the version easiest to dismiss.</li>
+            <li><strong>Mine competitor reviews.</strong> Direct Claude Cowork to synthesize competitor reviews across your key sources and surface the top complaints existing solutions haven't resolved. If your hypothesis addresses one, that's strong problem-solution evidence; if not, that's worth knowing too.</li>
+            <li><strong>Size the market and pressure-test it.</strong> Build TAM/SAM/SOM models and challenge the assumptions behind them — is the market expanding, consolidating, or mature? Map the buyer landscape: who holds budget, who influences decisions, and whether those are the same person.</li>
+            <li><strong>Run trend analysis.</strong> Identify three external trends — regulatory, technological, or demographic — that could significantly affect your market in the next two years, and assess whether each is a tailwind or a headwind for your specific hypothesis.</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Plan &amp; design customer discovery</p>
+          <h3>Talk to the right people, the right way</h3>
+          <ul>
+            <li><strong>Who to talk to.</strong> A precise target profile (job titles, company types, team structures, seniority) beats a long contact list. Identify where those people are reachable and build a prioritization order by how close they are to the problem.</li>
+            <li><strong>What to ask.</strong> Build the interview framework with Claude: the right questions, in the right order, structured to surface what people actually <em>do</em>, not what they say they would do. Replace "would you use this?" with "tell me about the last time you dealt with this problem," and ask Claude to flag any leading, future-facing, or socially-desirable questions.</li>
+            <li><strong>Post-interview analysis.</strong> After each conversation, feed your notes to Claude to identify what confirmed the hypothesis, what challenged it, and what was genuinely surprising. After every five interviews, have Claude Cowork produce two lists — evidence for and evidence against. If the first is much longer, ask whether that asymmetry reflects the data or your hopes.</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Customer outreach &amp; scheduling</p>
+          <h3>Automate the operational lift</h3>
+          <ul>
+            <li>Give Claude Cowork your validated target profile and have it research and compile a structured prospect list with verified contact information, then draft personalized outreach tailored to each person's role and context.</li>
+            <li>Connected to Gmail and Google Calendar via MCP, it manages the thread, handles scheduling, drafts follow-ups on a defined cadence (a day-seven nudge for non-responders, for instance), and keeps your tracking sheet current — so you always know where every prospect stands while you focus on the conversations themselves.</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Design the final solution concept</p>
+          <h3>Stress-test the solution from every angle</h3>
+          <ul>
+            <li>With the problem validated and a solution concept the evidence supports, use Claude to develop and challenge it: present the three assumptions your design depends on most heavily, then ask what would have to be true for each to hold and what the consequences are if one doesn't.</li>
+            <li>This is a reality checkpoint — does the design address the problem validation actually revealed, or the one you assumed going in?</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Build a lightweight prototype</p>
+          <h3>Now — and only now — open Claude Code</h3>
+          <ul>
+            <li>This is the moment Claude Code enters the picture. You're not building a real product yet; you're constructing a functional sample to use in customer and investor conversations — something a person can actually touch.</li>
+            <li><strong>Build only the single core interaction</strong> your solution depends on. Put it in front of five validated targets and ask them to try it. What you learn in those five conversations decides whether you keep building or go back to the drawing board.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="prose">
+        <p>Reaching the end of the Idea stage is a giant leap in the AI startup race: you're no longer betting on a hunch, you're executing against evidence. The founder's guiding question shifts from "is this worth building?" to "what exactly should we build first?" — and AI's primary role shifts from research partner to construction crew.</p>
+      </div>
+    </section>
+
+    <!-- ====== Chapter 4 — MVP ====== -->
+    <section class="section" id="ch04">
+      <header class="chapter__head">
+        <span class="chapter__num">Chapter 04 · Stage Two</span>
+        <h2 class="chapter__title">MVP Stage</h2>
+        <p class="chapter__sub">Translate a validated problem into a working product real users will actually use.</p>
+      </header>
+
+      <div class="prose">
+        <p>Plenty of founders treat the MVP stage as a pure construction phase, but it's still fundamentally an evidence-gathering exercise — only now the evidence is about the <em>solution</em>: whether a real, identifiable group finds it valuable enough to return to it, pay for it, or tell others about it. And <em>how</em> you build now determines what's possible later: investing in persistent context from day one is what keeps AI a force multiplier instead of a source of entropy.</p>
+      </div>
+
+      <div class="stage">
+        <div class="stage__block">
+          <p class="stage__block-label">Goal</p>
+          <h3>Fastest path to real evidence</h3>
+          <p>Translate a validated problem into a working product — not the full version with every roadmap feature, but the smallest, most focused iteration that puts a real solution in front of real users — while moving fast <em>without</em> accruing the kind of technical debt that compounds.</p>
+        </div>
+
+        <div class="stage__block">
+          <p class="stage__block-label">Exit criteria</p>
+          <h3>Genuine signal, not flattering noise</h3>
+          <p>Proof of product-market fit: a specific, identifiable group of users finds the product valuable enough to return to it (retention), pay for it (revenue), or tell others about it (referral). Sean Ellis's "very disappointed if I lost this" test above 40% is one useful litmus.</p>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Challenges to watch</p>
+          <h3>The new failure modes when speed is free</h3>
+          <div class="challenges">
+            <div class="challenge">
+              <span class="challenge__num">01</span>
+              <h4 class="challenge__title">Agentic technical debt</h4>
+              <p class="challenge__body">Because AI removes nearly every natural bottleneck on what reaches production, speed is guaranteed — but when speed is the only variable founders factor in, they accrue debt they'll struggle to pay off. Without specs and architectural constraints written somewhere AI can read, each session re-derives foundational decisions and they drift. You end up with a codebase that has no coherent mental model behind it — not because any single piece is bad, but because the pieces were never designed to fit together.</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">02</span>
+              <h4 class="challenge__title">Falling for false product-market fit</h4>
+              <p class="challenge__body">After weeks of disciplined building, shipping feels like confirmation you were right. But early momentum is generated by ephemeral forces — your friends, an investor's portfolio companies, a Hacker News spike. None of those reliably predict what happens at week six or week twelve once the boost has faded.</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">03</span>
+              <h4 class="challenge__title">Zero-friction scope creep</h4>
+              <p class="challenge__body">Each individual addition is defensible; together they sprawl. The traditional forcing function — the real cost of engineering time — no longer applies when a feature takes an afternoon instead of a sprint. The antidote is a written scope definition created before building, plus a rule that real-user evidence is required to amend it: it moves the decision from "should we build this?" to "have users told us they can't get value without it?"</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">04</span>
+              <h4 class="challenge__title">Insecure by inexperience</h4>
+              <p class="challenge__body">Agentic tools produce code that works, not code that is inherently secure — and security vulnerabilities are invisible until they're exploited, so there's no natural feedback loop to warn a first-time founder. Shipping a live MVP means real data, real exposure, and real consequences. A security review before any user touches the app is the minimum responsible threshold for release.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-h">How Claude can help MVP stage founders</h3>
+      <div class="stage">
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Define architecture before you build</p>
+          <h3>Write the guardrails Claude Code will operate inside</h3>
+          <ul>
+            <li>Before Claude Code writes a line of production code, open Claude and describe what you're building, who it serves, and the scale you realistically expect in the next six months. Have it define the architectural principles to follow, the dependencies to avoid, and the trade-offs you're consciously accepting.</li>
+            <li><strong>Save the output as <code>CLAUDE.md</code></strong> — your architectural context document and the first artifact of your build. Every subsequent session reads it; functionally, it's persistent project memory, automatically loaded by the Agent SDK when it runs in a directory. Without it, each session infers its own structural assumptions and the codebase drifts toward incoherence.</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Define &amp; enforce your scope</p>
+          <h3>Decide what you deliberately won't build</h3>
+          <ul>
+            <li>Use Claude to write a scope document: what the MVP does, what it deliberately does not do, and what specific real-user evidence would justify adding something new.</li>
+            <li>When new feature ideas surface — and they will — use Claude to pressure-test whether each is genuine signal from users or founder enthusiasm dressed up as product thinking.</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Build with Claude Code</p>
+          <h3>Each session executes decisions you've already made</h3>
+          <ul>
+            <li>Once architecture and scope are defined, Claude Code becomes the primary build tool — but treat each session as the execution of product decisions already made, not an invitation to add new ones.</li>
+            <li><strong>Use a session template:</strong> open with the architectural context document and the specific task; close by adding a brief log entry of what was built, what decisions were made, and what assumptions the session introduced. Five minutes of documentation per session is cheap insurance against drift.</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Security review before any user</p>
+          <h3>Know what's in your codebase before users trust it with their data</h3>
+          <ul>
+            <li>Claude can do a useful first-pass security review of AI-generated code and flag common vulnerabilities — a good habit to build into the loop before shipping. It is not a substitute for security tooling or, at higher stakes, a human reviewer.</li>
+            <li><strong>Claude Code Security</strong> goes further: it scans codebases for vulnerabilities and suggests targeted patches for human review, surfacing issues traditional methods miss. (At publication it was a limited beta — check current availability.)</li>
+            <li><strong>Exercise:</strong> before deploying to real users, run your core application code through Claude with a specific brief — authentication and session handling, data exposure in API responses, input validation and injection risks, and dependencies with known vulnerabilities. Treat each finding seriously, with human review for anything touching authentication, secrets, or data handling.</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Measure, manage feedback, and iterate</p>
+          <h3>Set the bar before the first user signs up</h3>
+          <ul>
+            <li><strong>Build the measurement framework <em>before</em> launch.</strong> Define retention benchmarks, activation criteria, and Day 7 / Day 30 targets, plus what a false positive would look like for your specific product. When data arrives, ask Claude to make the adversarial case against your own traction.</li>
+            <li><strong>Manage discovery and feedback logistics.</strong> Claude Cowork handles the tedious operational layer — building user contact lists, running outreach, scheduling feedback sessions, triaging bug reports. Keep a human in the loop for nuanced interpretation: is "this is great but I wish it could also…" a core need or a nice-to-have?</li>
+            <li><strong>Iterate toward evidence, not completeness.</strong> The stage ends when you have genuine PMF evidence, no matter how "finished" the product feels. No single data point confirms it — it's a pattern that has to hold across multiple iteration cycles.</li>
+            <li><strong>Pivot when the evidence demands it.</strong> After three iteration cycles without meaningful movement, run a diagnostic with Claude: is a segment responding differently? Is the gap between designed and experienced value a positioning problem or a product problem? What would have to be true for the current product to find PMF — and is that realistic? Let the answers decide whether you adjust, pivot, or return to the Idea stage.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Chapter 5 — Launch ====== -->
+    <section class="section" id="ch05">
+      <header class="chapter__head">
+        <span class="chapter__num">Chapter 05 · Stage Three</span>
+        <h2 class="chapter__title">Launch Stage</h2>
+        <p class="chapter__sub">You've proven your product deserves to exist. Now prove your business deserves to grow.</p>
+      </header>
+
+      <div class="prose">
+        <p>Launch is where companies that found real product traction can still fall apart — if the organization around the product can't keep up. Startups are naturally founder-centric through Idea and MVP, but holding every thread yourself becomes a Launch-stage bottleneck. The goal isn't to remove yourself from the company; it's to build operational systems that free your attention for the decisions only a founder can make.</p>
+      </div>
+
+      <div class="stage">
+        <div class="stage__block">
+          <p class="stage__block-label">Goal</p>
+          <h3>From traction to a repeatable engine</h3>
+          <p>Turn early traction into a repeatable, sustainable growth engine. Beyond making the product production-ready, harden the infrastructure underneath it and build an actual company around it.</p>
+        </div>
+
+        <div class="stage__block">
+          <p class="stage__block-label">Exit criteria</p>
+          <h3>Three conditions, all true</h3>
+          <ol>
+            <li><strong>Growth is repeatable and channel-driven.</strong> You acquire users predictably through specific channels with understood unit economics — CAC, LTV, and payback are numbers you know and can defend.</li>
+            <li><strong>The product handles production workloads.</strong> Infrastructure hardened, security and compliance in order, reliability holding under real conditions.</li>
+            <li><strong>Operations run without founder bottlenecks.</strong> Processes exist and automation is in place; you're no longer personally handling support, triage, sprint planning, or reporting.</li>
+          </ol>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Challenges to watch</p>
+          <h3>What kills companies that found PMF</h3>
+          <div class="challenges">
+            <div class="challenge">
+              <span class="challenge__num">01</span>
+              <h4 class="challenge__title">Technical debt comes due</h4>
+              <p class="challenge__body">The MVP codebase, built for speed and validation, ran well enough to prove the product worked. Production traffic, new features, and growing complexity now expose the shortcuts — and the longer that debt goes unaddressed, the more expensive it is to fix. Audit, refactor, and expand test coverage before the next feature cycle.</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">02</span>
+              <h4 class="challenge__title">Founder becomes the bottleneck</h4>
+              <p class="challenge__body">At MVP, the founder being in every loop was an asset. At Launch, as support volume grows and decisions stack up, that same instinct becomes the constraint. Telltale signs: decisions that should take an hour take a week; support piles up because only you know the answer; tasks happen only when you remember them. The shift from doing the work to designing the systems is the hardest in the lifecycle.</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">03</span>
+              <h4 class="challenge__title">Security and compliance go from theoretical to existential</h4>
+              <p class="challenge__body">With a handful of beta users and no sensitive data, security risk was hypothetical. The moment your product enters production with real users depending on it — and compliance requirements that didn't apply to a prototype suddenly do — it becomes real exposure. Do the systematic review <em>before</em> scale arrives, and treat what it surfaces as required remediation.</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">04</span>
+              <h4 class="challenge__title">Expansion before you're ready</h4>
+              <p class="challenge__body">New markets and funding opportunities look like growth; they can also be where product-market fit goes to die. Expanding too early into a meaningfully different market introduces new behaviors, compliance requirements, and payment infrastructure your product wasn't designed around — and risks neglecting the original users who made the traction real.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-h">How Claude can help Launch stage founders</h3>
+      <div class="prose">
+        <p>All three forms of Claude are in full use at Launch, and they compound: each tool's output becomes an input for the other two. This is what makes the ultra-lean model structurally possible — Claude Code builds the product, Claude Cowork builds the company around it, and Claude helps operationalize the product and organizational knowledge so a small team runs like a company many times its size.</p>
+      </div>
+
+      <div class="stage">
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Remediate technical debt before it compounds</p>
+          <h3>Audit, sequence, and write the decisions down</h3>
+          <ul>
+            <li>Use Claude Code to run a full architectural audit: where the codebase is brittle, which shortcuts will get more expensive, and where thin test coverage will reintroduce the same problems.</li>
+            <li>Feed those findings to Claude to triage and sequence the remediation — what must be fixed before the next release, what can wait a sprint, what's acceptable ongoing debt. This is also the moment to capture the architectural decisions that lived only in your head into <code>CLAUDE.md</code>.</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Make security &amp; compliance a workstream</p>
+          <h3>Not a one-time project</h3>
+          <ul>
+            <li>Use Claude Code to surface code-level issues that come up in SOC 2, GDPR, or HIPAA audits for your target market — both vulnerabilities and compliance gaps. AI scans are an aid, not a substitute for a qualified compliance review.</li>
+            <li>Build compliance into the development cycle rather than running it once. Run a code-level security review oriented to the frameworks your market requires, then have Claude produce a prioritized remediation sequence <em>and</em> the documentation and controls an enterprise procurement team will ask for.</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Stand up the product management processes you've been skipping</p>
+          <h3>A lightweight product operating system</h3>
+          <ul>
+            <li>The Launch stage needs lightweight, repeatable processes that run without founder intervention. Use Claude to design how your product timeline and work cycles are structured, what a spec must include, how bug reports get triaged and routed, and what your weekly metrics report covers.</li>
+            <li>Then use Claude Cowork to run the operational layer: scheduling sprint ceremonies, routing incoming bug reports, compiling weekly metrics from your connected data sources, and maintaining the feedback loop that keeps user signals flowing into product decisions.</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Build the systems that replace founder attention</p>
+          <h3>Inventory, then automate or delegate</h3>
+          <ul>
+            <li>Use Claude Cowork to run a structured audit of your operational load: every recurring task, every decision that lands on your desk, every workflow that only happens because you remember it.</li>
+            <li>Have Claude categorize the inventory into what can be automated entirely, what needs a human but not necessarily you, and what genuinely requires founder judgment — then build the workflow logic for the first two.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Chapter 6 — Scale ====== -->
+    <section class="section" id="ch06">
+      <header class="chapter__head">
+        <span class="chapter__num">Chapter 06 · Stage Four</span>
+        <h2 class="chapter__title">Scale Stage</h2>
+        <p class="chapter__sub">From a bet to a business. The founder's role re-centers from builder to public-facing executive.</p>
+      </header>
+
+      <div class="prose">
+        <p>During Scale, the work of growing the codebase is joined by the work of growing the company around it and maturing it into a business. Thousands of users become millions; one market becomes many. Your personal day-to-day shifts toward the company itself — analyst briefings, IPO roadshows — even as you strive to keep the lean, AI-centered structural advantage. Public investors, analysts, regulators, enterprise procurement teams, and acquirers all apply greater pressure and greater skepticism, so your product <em>and</em> your organization now have to withstand external scrutiny.</p>
+      </div>
+
+      <div class="stage">
+        <div class="stage__block">
+          <p class="stage__block-label">Goal</p>
+          <h3>Systematic, defensible growth</h3>
+          <p>Build systematic growth sustained by mature organizational operations, and a defensible moat through accumulated depth — domain expertise embedded in the product, deep integration with the tools users rely on, and proprietary system data competitors can't recreate.</p>
+        </div>
+
+        <div class="stage__block">
+          <p class="stage__block-label">Exit criteria</p>
+          <h3>A threshold, in one of three forms</h3>
+          <ol>
+            <li>Sustainable profitability at a scale that no longer requires external capital.</li>
+            <li>IPO readiness — growth, governance, and compliance all stand up to public-market scrutiny.</li>
+            <li>Acquisition by a buyer who recognizes the moat.</li>
+          </ol>
+          <p>All three require systematic, auditable growth, a moat that holds up under scrutiny, and an operationally mature organization. The litmus question: "If a well-funded incumbent copied your product today, would your users stay?"</p>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Challenges to watch</p>
+          <h3>The new tests that arrive at Scale</h3>
+          <div class="challenges">
+            <div class="challenge">
+              <span class="challenge__num">01</span>
+              <h4 class="challenge__title">Delegating the operational layer</h4>
+              <p class="challenge__body">Hand off too fast — especially to AI-automated systems — and critical decisions get made without the context only you can provide. Hold on too long and you become the bottleneck. For a founder hands-on since day one, this is as much a psychological challenge as a structural one. The hard work is codifying the institutional knowledge in your head into systems that are documented, auditable, and transferable.</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">02</span>
+              <h4 class="challenge__title">Scaling technical operations to enterprise grade</h4>
+              <p class="challenge__body">Customers no longer evaluate only your product — they want a dependable infrastructure partner. Larger customers and institutional buyers signing multi-year contracts expect documentation, SLAs, observability, incident response, and reliability guarantees that signal organizational maturity, and they'll hold you to them.</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">03</span>
+              <h4 class="challenge__title">Scaling organizational functions</h4>
+              <p class="challenge__body">A Scale-stage company needs organizational infrastructure — hiring, payroll, accounting, and legal operations — regardless of how many people are running it. The operational surface broadens to functions like financial reporting, compliance monitoring, contract management, and customer support.</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">04</span>
+              <h4 class="challenge__title">Building a real GTM function</h4>
+              <p class="challenge__body">Organic, founder-led growth — a well-timed launch, personal relationships with early customers — works only to a point, and most startups hit that ceiling at Scale. A legitimate go-to-market motion requires market segmentation, messaging architecture, sales playbooks, and a brand voice for audiences you've never sold to, including investors and enterprise buyers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-h">How Claude can help Scale stage founders</h3>
+      <div class="stage">
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Hand off day-to-day tasks to Claude Cowork</p>
+          <h3>Get a clear-eyed view of where your attention belongs</h3>
+          <ul>
+            <li>Have Claude build the short list of things only you should be doing now — product narrative, board relationships, enterprise deals, founder-to-founder conversations. Anything not on it is a candidate for delegation or Cowork automation.</li>
+            <li>Produce a bottleneck map of your operational layer, then ask what happens to each workflow when you're unavailable for a week. The ones that stall are where you're still hands-on enough to derail progress — tighten or replace those automations.</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Scale technical operations into enterprise-grade infrastructure</p>
+          <h3>Build the work <em>around</em> the codebase</h3>
+          <ul>
+            <li>Use Claude to draft and maintain the written infrastructure enterprise procurement expects — product documentation, support playbooks, and SLAs.</li>
+            <li>Direct Claude Code to audit and harden the codebase against enterprise reliability and security standards, and to build the support infrastructure a Discord-based community never needed: logging, monitoring, incident-response tooling, and the observability that makes SLAs enforceable. Claude Cowork then runs enterprise support itself — ticket routing, escalation, doc updates triggered by product changes, renewal tracking, and reporting cadences.</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Turn domain expertise into AI context</p>
+          <h3>A proprietary knowledge substrate no generalist AI can match</h3>
+          <ul>
+            <li>Through extended conversations, projects, and memory, capture everything you know — industry jargon, regulatory gotchas, edge cases, the reasons the obvious answer doesn't work — into a structured, searchable context. Skills can then codify recurring workflows into reusable routines Claude runs the same way every time.</li>
+            <li><strong>Encode domain edge cases into the product.</strong> Have Claude Code build a dedicated test case for each real edge case you've seen in your vertical (not a unit test). Every time a similar one surfaces, add it — your test suite becomes a map of your moat.</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Compound user data into a defensible advantage</p>
+          <h3>The behavioral fingerprint a copycat can't recreate</h3>
+          <ul>
+            <li>As users interact, they generate behavioral signals — what they accept and reject — that inform the roadmap. This data is time-locked and context-specific: you can't buy the behavioral fingerprint of thousands of users refining their workflows inside your product.</li>
+            <li>Have Claude audit the interaction data you've collected, identify the three highest-signal patterns, and design the feedback loop that turns each into systematic model improvement — then draft a one-page moat narrative for product marketing: how your data flywheel works, how long it's been spinning, and why a well-resourced competitor starting today couldn't replicate it within two years.</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Create workflow lock-in</p>
+          <h3>Lock-in via depth, not friction</h3>
+          <ul>
+            <li>The longer users run your product inside their daily operations, the more deeply it's embedded — automations built on top of it, people trained to use it, connections to their other tools. At that point, switching goes from a product decision to a full operational project.</li>
+            <li>Ask Claude to map your customer base by integration depth, then have Claude Code spin up native integrations, APIs, webhooks, and SDKs that let customers build <em>on top of</em> your product, not just use it — the deepest form of stickiness.</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">Build a real GTM function</p>
+          <h3>Bootstrap the go-to-market engine</h3>
+          <ul>
+            <li>Claude drafts foundational GTM resources from scratch — market segmentation, messaging architecture, analyst-relations strategy, sales playbooks, and the investor-facing metrics narrative — translating your product's value props into a product-marketing approach relevant to each audience segment.</li>
+            <li>Claude Cowork becomes the tactical execution layer: content pipelines, outbound sequences, analyst-briefing logistics, newsroom and PR cadences, CRM hygiene, and pipeline reporting. Where the motion needs product-marketing infrastructure — interactive demo environments, integration docs, sandbox tenants, API references — Claude Code builds it, so a well-built demo closes deals while you're in board meetings.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Chapter 7 ====== -->
+    <section class="section" id="ch07">
+      <header class="chapter__head">
+        <span class="chapter__num">Chapter 07</span>
+        <h2 class="chapter__title">Same job, new rules</h2>
+        <p class="chapter__sub">The founder's job hasn't changed. The path to do it has.</p>
+      </header>
+
+      <div class="prose">
+        <p>In the AI era, the founder's job hasn't changed: find a real problem, build something that solves it, and scale it into a company that matters. What's changed is the path to get there. Across the four stages — Idea, MVP, Launch, and Scale — AI compresses quarters into weeks.</p>
+        <p>Validation cycles that took months now take afternoons. A working prototype no longer requires a co-founder with the right stack; it requires a clear problem and a few focused sessions with a coding agent. Launch readiness compresses from a pre-launch scramble into a continuous workstream. And at scale, the operational weight that used to force early hires into firefighting roles can increasingly be handed off to AI — freeing your team to spend its attention on the judgment calls that become your moat.</p>
+      </div>
+
+      <blockquote class="pullquote">
+        The bottlenecks are no longer what you can build, but what you choose to build.
+        <span class="pullquote__attr">— The Founder's Playbook, Ch. 7</span>
+      </blockquote>
+    </section>
+
+    <!-- ====== Resources ====== -->
+    <section class="section" id="resources">
+      <header class="chapter__head">
+        <span class="chapter__num">Chapter 08</span>
+        <h2 class="chapter__title">Resources</h2>
+        <p class="chapter__sub">Where to go next from Anthropic's library.</p>
+      </header>
+
+      <h3 class="section-h">Building with Claude</h3>
+      <div class="resources">
+        <a class="resource" href="https://docs.claude.com/en/docs/claude-code/overview" target="_blank" rel="noopener">
+          <span class="resource__num">01</span>
+          <span>
+            <span class="resource__title">Claude Code docs</span>
+            <span class="resource__desc">From installation to advanced agentic workflows — start with the "How Claude Code works" overview.</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://www.anthropic.com/engineering/claude-code-best-practices" target="_blank" rel="noopener">
+          <span class="resource__num">02</span>
+          <span>
+            <span class="resource__title">Claude Code best practices</span>
+            <span class="resource__desc">Patterns proven inside Anthropic and across engineering teams — context management, permissions, planning, verification.</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://docs.claude.com/en/docs/claude-code/memory" target="_blank" rel="noopener">
+          <span class="resource__num">03</span>
+          <span>
+            <span class="resource__title">Using CLAUDE.md files</span>
+            <span class="resource__desc">Configure persistent project memory for your codebase — essential MVP-stage reading.</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://claude.com/resources/tutorials" target="_blank" rel="noopener">
+          <span class="resource__num">04</span>
+          <span>
+            <span class="resource__title">Tutorials library</span>
+            <span class="resource__desc">A searchable list of hands-on walkthroughs for specific tasks.</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://www.anthropic.com/solutions/startups" target="_blank" rel="noopener">
+          <span class="resource__num">05</span>
+          <span>
+            <span class="resource__title">Building AI Agents for Startups</span>
+            <span class="resource__desc">How startups use agents to become less founder-dependent as they scale.</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://www.anthropic.com/engineering/claude-code-best-practices" target="_blank" rel="noopener">
+          <span class="resource__num">06</span>
+          <span>
+            <span class="resource__title">Claude Code power user tips</span>
+            <span class="resource__desc">Workflow patterns from the Claude Code team itself, including parallel sessions and verification loops.</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://claude.com/" target="_blank" rel="noopener">
+          <span class="resource__num">07</span>
+          <span>
+            <span class="resource__title">Get started with Claude Cowork</span>
+            <span class="resource__desc">How teams set up Cowork and start implementing skills, plugins, and other features that scale its impact across a startup.</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+      </div>
+
+      <h3 class="section-h">Founder stories</h3>
+      <p class="prose" style="margin-bottom: 1rem;">A few of the companies the original playbook profiles, building on Claude across the lifecycle. Full write-ups and links are in the <a href="https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf" target="_blank" rel="noopener">original PDF</a>.</p>
+      <div class="stories">
+        <article class="story">
+          <span class="story__tag">YC · build with Claude Code</span>
+          <h3 class="story__name">HumanLayer, Ambral &amp; Vulcan Technologies</h3>
+          <p class="story__body">Three YC startups (F24 / W25 / S25) that used Claude to get from prototype to market fast and to scale AI-powered platforms with agentic coding workflows.</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">Legal</span>
+          <h3 class="story__name">GC AI</h3>
+          <p class="story__body">Founders used domain expertise to build a responsive, Claude-powered legal platform shaped around how in-house teams actually work — company-specific playbooks, cross-functional stakeholders, and variable risk tolerance.</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">Healthcare</span>
+          <h3 class="story__name">Carta Healthcare</h3>
+          <p class="story__body">Uses Claude to power its clinical abstraction platform, processing 22,000 surgical cases a year and cutting data-abstraction time by 66%.</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">No-code · Agent SDK</span>
+          <h3 class="story__name">Anything</h3>
+          <p class="story__body">Powered by Claude and the Agent SDK, it has helped 1.5 million users turn ideas into working software without writing code — including a non-technical founder already selling a full recruiting platform.</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">Security</span>
+          <h3 class="story__name">Cogent</h3>
+          <p class="story__body">An applied AI lab building agents that automate critical enterprise security tasks, using Claude as the reasoning layer across the full vulnerability lifecycle — investigation, prioritization, and remediation.</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">Operations · Cowork</span>
+          <h3 class="story__name">Airtree</h3>
+          <p class="story__body">Uses Claude Cowork as the center of its operations infrastructure, uniting data that used to be scattered across tools and teams so anyone can run a workflow automation built once.</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">Procurement · Agent SDK</span>
+          <h3 class="story__name">Duvo</h3>
+          <p class="story__body">Builds AI agents that run procurement, supply chain, and category management across ERPs, supplier portals, spreadsheets, email, and even phone calls — built entirely on Claude.</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">Home-care · EMR</span>
+          <h3 class="story__name">Zingage</h3>
+          <p class="story__body">An AI agent platform for 24/7 automated operations in home-care agencies, using Claude's tool calling across an EMR and multiple channels for nuanced, patient-tailored outcomes.</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">Nonprofit</span>
+          <h3 class="story__name">Kindora</h3>
+          <p class="story__body">Built by a nonprofit executive using Claude to intelligently match charities with funders; its MCP connector lets nonprofits access its prospecting tools directly within Claude.</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">Legal</span>
+          <h3 class="story__name">Wordsmith</h3>
+          <p class="story__body">Founded by a lawyer-turned-CTO, it uses Claude as the reasoning engine for contract review, agreement drafting, and document review, with its engineering team building the platform on Claude Code.</p>
+        </article>
+      </div>
+
+      <h3 class="section-h">Startup support &amp; opportunities</h3>
+      <div class="resources">
+        <a class="resource" href="https://www.anthropic.com/startups" target="_blank" rel="noopener">
+          <span class="resource__num">01</span>
+          <span>
+            <span class="resource__title">Anthropic Startups Program</span>
+            <span class="resource__desc">For startups working with Anthropic's VC partners: free API credits, the highest publicly available rate limits, and invitations to exclusive founder events and workshops.</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://www.anthropic.com/community" target="_blank" rel="noopener">
+          <span class="resource__num">02</span>
+          <span>
+            <span class="resource__title">Claude community</span>
+            <span class="resource__desc">Forums and community spaces for builders.</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://www.anthropic.com/events" target="_blank" rel="noopener">
+          <span class="resource__num">03</span>
+          <span>
+            <span class="resource__title">Live learning resources</span>
+            <span class="resource__desc">Conferences, webinars, livestreams, and recordings.</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf" target="_blank" rel="noopener">
+          <span class="resource__num">04</span>
+          <span>
+            <span class="resource__title">The full 36-page PDF</span>
+            <span class="resource__desc">The original publication with all founder stories and case studies.</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+      </div>
+
+      <div class="closing">
+        <span class="closing__rule" aria-hidden="true"></span>
+        <p class="closing__title">"From a bet to a business."</p>
+        <p class="closing__sub">When growth is systematic, the moat stands up under scrutiny, and the organization is sustainable — congratulations are in order.</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p>Full edition · summarized in good faith from <a href="https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf" target="_blank" rel="noopener">the original PDF</a> · all rights to the underlying content remain with Anthropic.</p>
+    <p>Open source on <a href="https://github.com/tingwei161803/anthropic-the-founder-playbook" target="_blank" rel="noopener">GitHub</a> · <a href="../" data-version-link>Reader's edition</a> · Available in <a href="./" aria-current="true">English</a> &amp; <a href="./zh-Hant/" data-lang-link>繁體中文</a></p>
+  </div>
+</footer>
+
+<script src="../assets/app.js" defer></script>
+</body>
+</html>

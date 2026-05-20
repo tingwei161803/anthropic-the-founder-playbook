@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>創辦人的行動手冊 · 完整版</title>
+<meta name="description" content="Anthropic《創辦人的行動手冊》完整導讀版——逐節涵蓋構想、MVP、上線、規模化四大階段，含所有練習與創辦人案例。">
+<meta property="og:title" content="創辦人的行動手冊 · 完整版">
+<meta property="og:description" content="Anthropic 為 AI 原生創辦人撰寫的行動手冊，逐節完整導讀版。">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,30..100;1,9..144,300..600,30..100&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+TC:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='10' height='10' x='3' y='3' fill='%23CC785C' transform='rotate(45 8 8)'/%3E%3Crect width='4' height='4' x='6' y='6' fill='%23F0EEE6' transform='rotate(45 8 8)'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="#cover" aria-label="創辦人的行動手冊首頁">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span>創辦人的行動手冊</span>
+      <span class="brand__sep">·</span>
+      <span class="brand__sub">完整版</span>
+    </a>
+    <div class="site-header__actions">
+      <a class="ghstar" href="https://github.com/tingwei161803/anthropic-the-founder-playbook" target="_blank" rel="noopener" aria-label="到 GitHub 為這個專案按星星">
+        <svg class="ghstar__logo" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+        <span class="ghstar__text">給顆星</span>
+        <span class="ghstar__star" aria-hidden="true">★</span>
+        <span class="ghstar__count" hidden></span>
+      </a>
+      <nav class="ver-switch" aria-label="版本">
+        <a href="../../zh-Hant/" data-version-link>導讀</a>
+        <a href="./" aria-current="true">完整</a>
+      </nav>
+      <nav class="lang-switch" aria-label="語言">
+        <a href="../" data-lang-link>EN</a>
+        <a href="./" aria-current="true">繁中</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ============ TOC ============ -->
+  <aside class="toc" aria-label="目錄">
+    <button class="toc__toggle" type="button">目錄</button>
+    <div class="toc__panel">
+      <p class="toc__label">目錄</p>
+      <ol class="toc__list">
+        <li class="toc__item" data-target="cover"><a href="#cover"><span class="toc__num">00</span>封面</a></li>
+        <li class="toc__item" data-target="ch01"><a href="#ch01"><span class="toc__num">01</span>生命週期，重啟版</a></li>
+        <li class="toc__item" data-target="ch02"><a href="#ch02"><span class="toc__num">02</span>創辦人的定義正在改變</a></li>
+        <li class="toc__item" data-target="ch03"><a href="#ch03"><span class="toc__num">03</span>構想階段</a></li>
+        <li class="toc__item" data-target="ch04"><a href="#ch04"><span class="toc__num">04</span>MVP 階段</a></li>
+        <li class="toc__item" data-target="ch05"><a href="#ch05"><span class="toc__num">05</span>上線階段</a></li>
+        <li class="toc__item" data-target="ch06"><a href="#ch06"><span class="toc__num">06</span>規模化階段</a></li>
+        <li class="toc__item" data-target="ch07"><a href="#ch07"><span class="toc__num">07</span>工作未變，規則已改</a></li>
+        <li class="toc__item" data-target="resources"><a href="#resources"><span class="toc__num">08</span>延伸資源</a></li>
+      </ol>
+
+      <div class="toc__cta">
+        <p class="toc__cta-label">時間有限?</p>
+        <p class="toc__cta-title">改讀精華導讀版</p>
+        <a class="toc__cta-link" href="../../zh-Hant/" data-version-link>精華導讀版</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main">
+
+    <!-- ====== Cover / Hero ====== -->
+    <section class="section hero" id="cover">
+      <p class="hero__eyebrow">Anthropic 出版 · 2026 年 5 月 · 完整版</p>
+      <h1 class="hero__title">創辦人的<em>行動手冊</em></h1>
+      <p class="hero__lede">從一個構想到一家持久的公司——逐節走過完整內容，含每一個練習與創辦人案例。</p>
+
+      <div class="hero__meta">
+        <div class="hero__meta-item">
+          <span class="hero__meta-label">出版者</span>
+          <span class="hero__meta-value">Anthropic</span>
+        </div>
+        <div class="hero__meta-item">
+          <span class="hero__meta-label">篇幅</span>
+          <span class="hero__meta-value">36 頁 · 7 章</span>
+        </div>
+        <div class="hero__meta-item">
+          <span class="hero__meta-label">適讀對象</span>
+          <span class="hero__meta-value">AI 原生創辦人</span>
+        </div>
+        <div class="hero__meta-item">
+          <span class="hero__meta-label">版本</span>
+          <span class="hero__meta-value">完整版 · 逐節導讀</span>
+        </div>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#ch01">
+          開始閱讀 <span class="btn__arrow">→</span>
+        </a>
+        <a class="btn btn--secondary" href="https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf" target="_blank" rel="noopener">
+          下載原文 PDF
+        </a>
+      </div>
+
+      <p class="hero__more">
+        <strong>這是完整版。</strong>
+        <span>想先快速看過重點?</span>
+        <a href="../../zh-Hant/" data-version-link>改讀精華導讀版</a>
+      </p>
+    </section>
+
+    <!-- ====== Chapter 1 ====== -->
+    <section class="section" id="ch01">
+      <header class="chapter__head">
+        <span class="chapter__num">第 01 章</span>
+        <h2 class="chapter__title">新創公司的生命週期：2026 重啟版</h2>
+        <p class="chapter__sub">AI 不只是加速了工作——它重新繪製了從構想到退場之間的整張地圖。</p>
+      </header>
+
+      <div class="prose">
+        <p class="dropcap">AI 正在重塑新創被打造出來的方式。今天，從沒寫過一行程式碼的創辦人也能讓正式上線的應用問世，而「精實的十人獨角獸」也從草根逆襲的故事，變成一份可被執行的計畫。開公司過去那些歷史性的門檻，已經被消解。</p>
+        <p>2026 年的 AI 可以寫正式上線的程式碼、做市場研究、彙整競爭地圖、草擬募資文件、自動化營運流程。透過抹平過去連資深技術創辦人都得面對的陡峭學習曲線，AI 最重要的影響，是把「誰能開一家公司」這件事的門檻徹底拉平。一個好點子如今能帶創辦人走得比以往更遠，因為代理式編碼把過去需要一整支工程團隊的工作，壓縮成一個創辦人就能獨力交付的份量。</p>
+        <p>傳統的成長路徑假設從構想到規模化要走：<strong>驗證 → 募資 → 招聘 → 開發 → 再募資 → 循環</strong>。AI 抹去了一個預設——每進入一個新階段，就需要更大的團隊、不同的技能組合、以及新一輪資金。本手冊為一個「AI 同時是你技術與組織發展核心」的時代，重新描繪四大階段——<strong>構想、MVP、上線、規模化</strong>:每個階段長什麼樣、哪些工具適合、以及創辦人如何用它們壓縮從構想到退場的時間。</p>
+      </div>
+
+      <blockquote class="pullquote">
+        AI 抹去了一個過去理所當然的預設：每進入一個新階段，就需要更大的團隊、更不一樣的技能組合、以及全新一輪的資金。
+        <span class="pullquote__attr">— 創辦人的行動手冊，第 1 章</span>
+      </blockquote>
+    </section>
+
+    <!-- ====== Chapter 2 ====== -->
+    <section class="section" id="ch02">
+      <header class="chapter__head">
+        <span class="chapter__num">第 02 章</span>
+        <h2 class="chapter__title">「創辦人」這份工作，定義正在改變</h2>
+        <p class="chapter__sub">從一名實作者，蛻變為調度多個代理的指揮者。</p>
+      </header>
+
+      <div class="prose">
+        <p>過去，創辦人是由「他們親手能做什麼」定義的:技術創辦人寫程式，非技術創辦人跑營運、談生意。如今可用的模型、系統與 AI 代理，已經拆掉了「會寫東西的人」與「擁有值得做的想法的人」之間那道牆。沒有工程背景的人能讓正式上線的軟體問世；商業經驗有限的技術型創辦人，也能產出 GTM 策略、財務模型與精美的募資簡報。</p>
+        <p>過去創辦人多數時間花在執行:寫程式、管人、處理日常營運。在 AI 原生新創裡，創辦人的角色從實作者，更多地轉為「代理的指揮者」——指揮那些能讀檔、執行指令、跑程式、甚至上網瀏覽的專用 AI 助理。注意力往上挪到更高階的工作:產生想法、指揮執行這些想法的系統。最具顛覆性的影響是:過去沒有工程管道的領域專家，現在也能開始打造產品——於是你會看到由經歷迥異的人創立的新創，去解決傳統技術創辦人管道從未優先處理的問題。</p>
+      </div>
+
+      <h3 class="section-h">給精實新創的 AI 工具能力</h3>
+      <div class="prose">
+        <p>傳統模式假設你要招工程師來蓋、招業務來賣、招營運來維持公司運轉——人數被當成動能與成熟度的象徵。如今三類 AI 能力，足以讓一家精實新創運轉得像一家規模大上許多的組織。</p>
+      </div>
+
+      <div class="tools">
+        <article class="tool">
+          <h3 class="tool__name">對話式智能與研究</h3>
+          <span class="tool__when">隨叫隨到的專家</span>
+          <p class="tool__desc">所有過去得四處打聽「該怎麼設薪資/排 sprint/寫投資人備忘錄」的問題。三種型態:<strong>深度研究</strong>(競爭分析、市場規模、財務建模)、<strong>文件草擬</strong>(募資簡報、案例研究、投資人備忘錄、PRD),以及<strong>策略思辨夥伴</strong>(唱反調分析、事前驗屍、情境規劃、路線圖優化)。</p>
+        </article>
+        <article class="tool">
+          <h3 class="tool__name">代理式編碼</h3>
+          <span class="tool__when">永遠不會被卡住的工程師</span>
+          <p class="tool__desc">用自然語言描述你要的東西，AI 就能以一整支工程團隊的速度生成、測試、除錯、重構出可上線的程式碼。「我有一個點子」到「我有一個產品」的距離被壓縮——創辦人的角色聚焦在「做什麼、為什麼」，由 AI 負責打造可承載真實使用者的基礎建設。</p>
+        </article>
+        <article class="tool">
+          <h3 class="tool__name">工作流自動化</h3>
+          <span class="tool__when">隨時待命的營運團隊</span>
+          <p class="tool__desc">排程、CRM 更新、每週報表、維持文件最新、法遵追蹤——把公司運轉起來的所有結締組織。Claude Cowork 能與這些彼此串接的系統(專案管理、溝通工具、資料源)整合，而不需要任何人去打造與維護這些整合。</p>
+        </article>
+      </div>
+
+      <h3 class="section-h">時機與調度，就是一切</h3>
+      <div class="prose">
+        <p>能駕馭 AI 的研究、自動化與代理式編碼的創辦人，可以用遠超過其人數所暗示的槓桿運轉公司，並把絕大多數時間與心力花在真正重要的工作上。但這一切都不會自動駕駛地發生。指揮這些工具的創辦人，必須知道<em>怎麼</em>用、以及<em>何時</em>該用哪一項——本手冊接下來就一階段一階段地走過這套指揮藝術。</p>
+      </div>
+
+      <blockquote class="pullquote">
+        創辦人的注意力，正在從執行層往上挪——挪向方向感與判斷力。
+        <span class="pullquote__attr">— 創辦人的行動手冊，第 2 章</span>
+      </blockquote>
+    </section>
+
+    <!-- ====== Chapter 3 — Idea ====== -->
+    <section class="section" id="ch03">
+      <header class="chapter__head">
+        <span class="chapter__num">第 03 章 · 階段一</span>
+        <h2 class="chapter__title">構想階段</h2>
+        <p class="chapter__sub">構想與現實相遇之處——而紀律，是<em>還不要</em>動手蓋，直到證據足以支持。</p>
+      </header>
+
+      <div class="prose">
+        <p>每一家新創都從同一個起點出發:一個讓創辦人念念不忘的問題。這個階段的工作是研究、客戶探索、競爭分析，以及誠實面對所有反向證據——這一切都應發生在請 Claude Code 生成第一行正式程式碼<em>之前</em>。實務上，構想階段是一連串問題:這問題夠真實、夠具體、夠頻繁到值得圍繞它開公司嗎?誰會遇到，那是不是一個市場?有沒有別人在解，解得多好?一個解法到底需要做到什麼——我的點子做到了嗎?這些加總成一個終極問題:<strong>這值得蓋嗎?</strong></p>
+      </div>
+
+      <div class="stage">
+        <div class="stage__block">
+          <p class="stage__block-label">目標</p>
+          <h3>以研究為導向的驗證</h3>
+          <p>在投入資源開發之前，先收集到扎實的證據:一個真實的問題確實存在，而你提出的解法確實對應到這個問題。</p>
+        </div>
+
+        <div class="stage__block">
+          <p class="stage__block-label">離開條件</p>
+          <h3>問題—解法契合度</h3>
+          <ol>
+            <li>問題真實且具體——你能說出誰會遇到、多常遇到、多嚴重、目前怎麼處理。</li>
+            <li>你的解法回應的是驗證過程中浮現的問題，而不是你最初假設的那個。</li>
+            <li>你已有足夠訊號支撐後續開發——這些質性證據讓「投入做 MVP」是理性判斷，而非信仰之躍。</li>
+          </ol>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">需留意的挑戰</p>
+          <h3>AI 原生構想階段特有的三種失敗模式</h3>
+          <div class="challenges">
+            <div class="challenge">
+              <span class="challenge__num">01</span>
+              <h4 class="challenge__title">把「開發」誤當成「驗證」</h4>
+              <p class="challenge__body">當技術障礙被移除，熱血的創辦人最容易跳過最重要的工作:確認真的有人需要你即將打造的東西。可運作的原型很容易被誤認為證據，但它不是——它是「對話」的壓測道具，那些對話才是真正的證據。早在代理式編碼之前，<strong>就有 42% 的新創失敗，是因為做了沒人要的東西</strong>;當「我有點子」到「我有產品」的距離崩塌，這個風險只會更高。</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">02</span>
+              <h4 class="challenge__title">過早規模化</h4>
+              <p class="challenge__body">當開發變得毫不費力又即時，你會把執行能力推得遠遠超前於「商業上已被驗證」的程度。代理式編碼會以對待好點子的同樣熱情，圍繞一個根本錯誤的前提去生成、測試、重構程式碼。系統裡的智慧是你自己的;這個階段的最高指導原則，是讓「理解」走在「動工」之前。</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">03</span>
+              <h4 class="challenge__title">失去客觀性</h4>
+              <p class="challenge__body">你請 AI 為你已相信的事找證據，它就會找到——確認偏誤從此擁有一台研究引擎。一個不問難題的創辦人，現在能為一個壞點子建構出精緻、看似充分研究過的論述，還自信滿滿地以為自己在做盡職調查。解方是同一個工具反過來:讓它像驗證一個點子那樣，徹底地壓力測試它。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-h">Claude 如何協助構想階段的創辦人</h3>
+      <div class="prose">
+        <p>構想階段本質上是一場研究與驗證的演練，這意味著要拿起那些幫你在寫任何程式碼之前先嚴謹思考的工具。三個產品介面底下是同一個 Claude;改變的，是它周圍的工作空間。</p>
+      </div>
+
+      <table class="decision">
+        <caption>三個介面底下是同一個 Claude——改變的是它周圍的工作空間。</caption>
+        <thead>
+          <tr><th scope="col">如果任務是…</th><th scope="col">使用</th><th scope="col">為什麼</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">一個提問、改寫、快速腦力激盪</th>
+            <td data-label="使用">Claude</td>
+            <td data-label="為什麼">快速、對話式、零設定。</td>
+          </tr>
+          <tr>
+            <th scope="row">研究、分析，或從你的檔案與系統做出一份完成品</th>
+            <td data-label="使用">Claude Cowork</td>
+            <td data-label="為什麼">資料夾存取、連接器、Skills、排程執行。</td>
+          </tr>
+          <tr>
+            <th scope="row">寫、測試或交付軟體</th>
+            <td data-label="使用">Claude Code</td>
+            <td data-label="為什麼">程式庫存取、diff、git、開發環境。</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="stage">
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">定義並壓測問題</p>
+          <h3>把假設磨利到「可被檢驗」</h3>
+          <ul>
+            <li><strong>逼出具體性。</strong>「合約審查很耗時」沒辦法被檢驗。「中型企業的法務團隊每份合約要花 3 天以上，因為紅線修訂散落在 email 串、而非單一版本控管的文件裡」才可以。</li>
+            <li><strong>替反方辯護。</strong>請 Claude 為「你的點子行不通」辯護——挖出負面市場訊號、失敗的競品、客戶行為模式，這些都是討喜的綜整會悄悄淡化掉的。把 Claude 當成有架構的反方辯護人，是整個生命週期每個階段的核心用法。</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">市場研究與競品地圖</p>
+          <h3>動手前先把戰場畫清楚</h3>
+          <ul>
+            <li><strong>克服「競品忽視」。</strong>創辦人傾向低估別人在做什麼。請 Claude 為「每個競品為何會贏」提出最有力的論述——分層:直接競品、間接競品、潛在收購方、鄰近玩家——說明真正的威脅，而不是最容易被打發的那一版。</li>
+            <li><strong>挖競品評論。</strong>讓 Claude Cowork 跨來源彙整競品評論，找出既有解法尚未解決的主要抱怨。如果你的假設正好回應其中之一，那就是強力的問題—解法證據;如果沒有，這也值得知道。</li>
+            <li><strong>估市場並壓測它。</strong>建立 TAM/SAM/SOM 模型並挑戰背後的假設——市場是在擴張、整併、還是已成熟?描繪買方地圖:誰掌握預算、誰影響決策、這兩者是不是同一人。</li>
+            <li><strong>做趨勢分析。</strong>找出三個外部趨勢——法規、技術或人口結構——可能在未來兩年顯著影響你的市場，並評估每一個對你的具體假設是順風還是逆風。</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">規劃與設計客戶探索</p>
+          <h3>找對的人、用對的方式談</h3>
+          <ul>
+            <li><strong>找誰談。</strong>一份精準的目標輪廓(職稱、公司類型、團隊結構、層級)勝過一長串聯絡名單。找出這些人在哪裡找得到，並依「離問題多近」排出優先順序。</li>
+            <li><strong>問什麼。</strong>用 Claude 建立訪談架構:對的問題、對的順序，設計成能逼出人們實際<em>做了什麼</em>、而非他們說會做什麼。把「你會用這個嗎?」換成「上一次你遇到這個問題時是怎麼處理的?」並請 Claude 標出任何誘導性、面向未來、或會引出社會期許答案的問題。</li>
+            <li><strong>訪後分析。</strong>每場對話後把筆記餵給 Claude，找出哪些確認了假設、哪些挑戰了假設、哪些真正出乎意料。每進行五場，讓 Claude Cowork 整理兩份清單——支持與反對的證據。若第一份明顯較長，反問自己:這個落差反映的是資料，還是你的期待?</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">客戶外展與排程</p>
+          <h3>把操作性的負擔自動化</h3>
+          <ul>
+            <li>把驗證過的目標輪廓交給 Claude Cowork，讓它研究並彙整出一份附驗證聯絡資訊的潛在對象清單，再依每個人的角色與情境草擬個人化的外展信。</li>
+            <li>透過 MCP 連到 Gmail 與 Google 日曆後，它能管理對話串、處理排程、依設定節奏草擬跟進(例如對未回覆者第七天的提醒),並隨時更新追蹤表——讓你清楚每位對象的進度，同時把心力留給對話本身。</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">設計最終解法概念</p>
+          <h3>從每個角度壓測你的解法</h3>
+          <ul>
+            <li>問題已驗證、解法概念也有證據支撐後，用 Claude 發展並挑戰它:提出你的設計最仰賴的三個假設，再追問每個假設要成立需要什麼前提、若其中一個不成立會有什麼後果。</li>
+            <li>這是一個現實檢查點——這個設計回應的，是驗證過程「真正揭露」的問題，還是你一開始「假設」的那個問題?</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">打造輕量原型</p>
+          <h3>此時——也只在此時——才打開 Claude Code</h3>
+          <ul>
+            <li>這是 Claude Code 登場的時刻。你還不是在蓋真正的產品，而是做出一個可運作的樣本，用在客戶與投資人的對話裡——一個人們真的能觸碰的東西。</li>
+            <li><strong>只蓋你的解法所仰賴的那一個核心互動。</strong>把它放到五位已驗證的目標使用者面前，請他們試用。你在這五場對話裡學到的東西，決定你該繼續往下蓋、還是回到原點重來。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="prose">
+        <p>抵達構想階段的終點，是 AI 新創競賽裡的一大躍進:你不再是賭一個直覺，而是依著證據在執行。創辦人的指引問題，從「這值得蓋嗎?」轉成「我們究竟該先蓋什麼?」——而 AI 的主要角色，也從研究夥伴轉為施工團隊。</p>
+      </div>
+    </section>
+
+    <!-- ====== Chapter 4 — MVP ====== -->
+    <section class="section" id="ch04">
+      <header class="chapter__head">
+        <span class="chapter__num">第 04 章 · 階段二</span>
+        <h2 class="chapter__title">MVP 階段</h2>
+        <p class="chapter__sub">把已被驗證的問題，轉化為一個真實使用者願意用的可運作產品。</p>
+      </header>
+
+      <div class="prose">
+        <p>很多創辦人把 MVP 階段當成純粹的施工期，但它本質上仍是一場蒐集證據的演練——只是這次的證據改聚焦在<em>解法</em>上:一群可被指認的使用者，是否覺得它有價值到願意回訪、付費、或推薦給別人。而你現在<em>怎麼</em>蓋，也決定了後續還能不能往上長:從第一天就投資「持久化的脈絡」,是讓 AI 維持為力量倍增器、而非熵增來源的關鍵。</p>
+      </div>
+
+      <div class="stage">
+        <div class="stage__block">
+          <p class="stage__block-label">目標</p>
+          <h3>抵達真實證據的最短路徑</h3>
+          <p>把已驗證的問題轉化為可運作產品——不是塞滿路線圖功能的完整版，而是把真實解法放到真實使用者面前的、最小最聚焦的迭代——同時要快，<em>但不</em>累積那種會持續複利的技術債。</p>
+        </div>
+
+        <div class="stage__block">
+          <p class="stage__block-label">離開條件</p>
+          <h3>真實訊號，而非討喜的雜訊</h3>
+          <p>產品市場契合度(PMF)的證據:有一群明確、可被指認的使用者，覺得產品有價值到願意回訪(留存)、付費(營收)、或推薦給別人(口碑)。Sean Ellis 的「如果失去它我會非常失望」測試超過 40%，是一個實用判準。</p>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">需留意的挑戰</p>
+          <h3>當速度變免費後，新出現的失敗模式</h3>
+          <div class="challenges">
+            <div class="challenge">
+              <span class="challenge__num">01</span>
+              <h4 class="challenge__title">代理式技術債</h4>
+              <p class="challenge__body">因為 AI 幾乎移除了所有控制「什麼能進production」的天然瓶頸，速度是保證的——但當速度是創辦人唯一考量的變數時，他們會累積難以償還的債。沒有把規格與架構約束寫在 AI 讀得到的地方，每次對話都重新推導底層決策、然後逐漸偏移。最後你得到一個沒有連貫心智模型的程式庫——不是哪一塊不好，而是這些塊從一開始就不是為了被湊在一起而設計的。</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">02</span>
+              <h4 class="challenge__title">誤把假 PMF 當真</h4>
+              <p class="challenge__body">經過數週紀律性的開發，出貨那一刻感覺像是「你一直都對」的確認。但早期動能來自短暫的力量——你的朋友、投資人的其他被投公司、Hacker News 的一日熱度。它們沒有一個能可靠預測熱度退去後的第六週或第十二週會剩下什麼。</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">03</span>
+              <h4 class="challenge__title">零阻力下的範疇擴張</h4>
+              <p class="challenge__body">每個新增單獨看都站得住腳，湊在一起就一片蔓生。傳統的剎車——工程時間的真實成本——在功能只需一個下午而非一個 sprint 時就不再適用。解方是動工前先寫下範疇定義，並訂一條規則:要修改它得有真實使用者證據。這把決策從「我們該不該做這個?」轉成「使用者是否親口說沒有這個就拿不到價值?」</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">04</span>
+              <h4 class="challenge__title">經驗不足造成的資安漏洞</h4>
+              <p class="challenge__body">代理式工具寫出來的程式碼會動，但不會自動具備安全性——而資安漏洞在被利用之前都是隱形的，沒有天然的回饋迴圈來警告新手創辦人。上線一個真實的 MVP 意味著真實資料、真實暴露、出事時真實的後果。在任何使用者碰到產品之前先做資安審查，是負責任地對外發布的最低門檻。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-h">Claude 如何協助 MVP 階段的創辦人</h3>
+      <div class="stage">
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">在動程式碼前先定義架構</p>
+          <h3>寫下 Claude Code 將在其中運作的護欄</h3>
+          <ul>
+            <li>在 Claude Code 寫下任何一行正式程式碼之前，打開 Claude，描述你在打造什麼、為誰服務、未來六個月實際預期的規模。讓它定義應遵循的架構原則、應避免的相依、以及你有意識接受的取捨。</li>
+            <li><strong>把產出存成 <code>CLAUDE.md</code></strong>——你的架構脈絡文件，也是這次開發的第一份產物。之後每一次對話都會讀它;它本質上就是專案的持久化記憶，會在 Agent SDK 於某個目錄執行時自動載入。沒有它，每場對話都自行推測結構假設，程式庫便朝著失序漂移。</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">定義並守住範疇</p>
+          <h3>決定你刻意不做什麼</h3>
+          <ul>
+            <li>用 Claude 寫一份範疇文件:MVP 會做什麼、刻意不做什麼、以及什麼樣的真實使用者證據才能正當化新增功能。</li>
+            <li>當新功能點子冒出來時——它們一定會——用 Claude 壓測:這究竟是來自使用者的真實訊號，還是包裝成產品思維的創辦人熱情。</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">用 Claude Code 開發</p>
+          <h3>每場對話都在執行你已做好的決策</h3>
+          <ul>
+            <li>架構與範疇定義好後，Claude Code 成為主要的開發工具——但把每場對話當成「執行已做好的產品決策」,而不是趁機塞新功能的機會。</li>
+            <li><strong>用對話樣板:</strong>開場帶上架構脈絡文件與當下的具體任務;收尾留下一段簡短日誌——蓋了什麼、做了什麼決策、引入了什麼假設。每場多花五分鐘寫文件，是抵抗漂移最便宜的保險。</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">使用者出現前先做資安審查</p>
+          <h3>在使用者把資料託付給你之前，先搞清楚程式庫裡有什麼</h3>
+          <ul>
+            <li>Claude 能對 AI 生成的程式碼做一次有用的初步資安審查、標出常見漏洞——這是出貨前該養成的習慣。它不能取代資安工具;在更高風險時，也不能取代真人審查者。</li>
+            <li><strong>Claude Code Security</strong> 走得更遠:它掃描程式庫找漏洞、並針對人工審查提出有針對性的修補建議，揪出傳統方法會漏掉的問題。(出版時它是限量 beta，使用前請確認最新可用狀態。)</li>
+            <li><strong>練習:</strong>部署給任何真實使用者之前，帶著明確指令把核心應用程式碼交給 Claude 跑一遍——身分驗證與 Session 管理、API 回應中的資料暴露、輸入驗證與注入風險、以及有已知漏洞的相依套件。把每個發現都當真，凡涉及身分驗證、機密或資料處理的，都要有真人審查。</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">衡量、管理回饋、持續迭代</p>
+          <h3>在第一位使用者註冊前就把標準訂好</h3>
+          <ul>
+            <li><strong>在上線<em>之前</em>就建立衡量框架。</strong>定義留存基準、啟用條件、Day 7 / Day 30 目標，以及對你的產品而言「什麼算假陽性」。資料進來時，請 Claude 為你自己的成績做反方論述。</li>
+            <li><strong>管理探索與回饋的後勤。</strong>Claude Cowork 處理繁瑣的操作層——建立使用者聯絡名單、跑外展、安排回饋會議、分流 Bug 回報。保留真人在迴圈裡做細膩判讀:「這很棒，但我希望它也能…」是核心需求還是錦上添花?</li>
+            <li><strong>朝證據迭代，而非朝「做完」迭代。</strong>當你拿到真正的 PMF 證據，這個階段就結束了，無論產品感覺多「完成」。沒有單一數據能確認 PMF——它是一個必須跨多個迭代週期持續成立的模式。</li>
+            <li><strong>該轉就轉。</strong>連續三輪迭代都沒有明顯起色後，和 Claude 做一次診斷:是否有某個區隔反應不同?設計價值與體驗價值之間的落差，是定位問題還是產品問題?要讓現在這個產品找到 PMF，前提需要是什麼——而那實際嗎?讓答案決定你要調整、轉向、還是回到構想階段。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Chapter 5 — Launch ====== -->
+    <section class="section" id="ch05">
+      <header class="chapter__head">
+        <span class="chapter__num">第 05 章 · 階段三</span>
+        <h2 class="chapter__title">上線階段</h2>
+        <p class="chapter__sub">你已證明這個產品值得存在，接下來要證明這門生意值得長大。</p>
+      </header>
+
+      <div class="prose">
+        <p>上線，是真正抓到產品動能的公司仍可能潰散的階段——只要產品周圍的組織跟不上。新創在構想與 MVP 階段天生以創辦人為中心，但事事都自己扛，到了上線階段就成了瓶頸。這個階段的目標不是把自己從公司抽離，而是搭建營運系統，讓你的注意力釋放去處理只有創辦人能做的決定。</p>
+      </div>
+
+      <div class="stage">
+        <div class="stage__block">
+          <p class="stage__block-label">目標</p>
+          <h3>從動能到可重複的引擎</h3>
+          <p>把早期動能轉化為可重複、可持續的成長引擎。除了讓產品達到 production-ready，還要加固它底下的基礎建設，並真正圍繞產品打造出一家公司。</p>
+        </div>
+
+        <div class="stage__block">
+          <p class="stage__block-label">離開條件</p>
+          <h3>三個條件，缺一不可</h3>
+          <ol>
+            <li><strong>成長是可重複、由通路驅動的。</strong>你能透過特定通路、以理解的單位經濟可預測地獲客——CAC、LTV、回收週期都是你能說出口也守得住的數字。</li>
+            <li><strong>產品撐得起正式流量的負載。</strong>基礎建設已加固，資安與法遵已就位，可靠度在真實條件下守得住。</li>
+            <li><strong>營運不再卡在創辦人身上。</strong>流程已建立、自動化已上線;你不再親自處理客服、分流、sprint 規劃或報表。</li>
+          </ol>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">需留意的挑戰</p>
+          <h3>找到 PMF 之後反而把公司搞垮的原因</h3>
+          <div class="challenges">
+            <div class="challenge">
+              <span class="challenge__num">01</span>
+              <h4 class="challenge__title">技術債到期</h4>
+              <p class="challenge__body">為速度與驗證而生的 MVP 程式碼，跑得夠用以證明產品可行。但正式流量、新功能、不斷增加的複雜度，會把先前的捷徑攤在陽光下——而債拖得越久，修起來越貴。請在下一輪功能週期之前完成稽核、重構，並擴大測試覆蓋率。</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">02</span>
+              <h4 class="challenge__title">創辦人成為瓶頸</h4>
+              <p class="challenge__body">在 MVP，創辦人在每個迴圈裡是資產;到了上線，當客服量上升、決策堆疊，同一種本能就變成限制。徵兆:本該一小時拍板的事拖一週;客服堆積，因為只有你知道答案;事情只在你記得時才會發生。從「親自做事」轉為「設計系統」，是整個生命週期裡最難跨的一道坎。</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">03</span>
+              <h4 class="challenge__title">資安與法遵從理論變成生死問題</h4>
+              <p class="challenge__body">少數 beta 使用者、沒有敏感資料時，資安風險是假設性的。當產品進入 production、有真實使用者依賴它——加上原本不適用於原型的法遵要求突然適用——它就變成真實的暴露風險。請在規模到來<em>之前</em>做完系統性審查，並把它揪出的問題視為必須處理的修復。</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">04</span>
+              <h4 class="challenge__title">在還沒準備好之前就擴張</h4>
+              <p class="challenge__body">新市場與新募資機會看起來像成長;它們也可能是 PMF 的葬身之地。太早擴張進一個顯著不同的市場，會引入你產品沒設計過的新行為、新法遵要求與新金流基礎建設——還可能冷落那群讓動能成為動能的早期使用者。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-h">Claude 如何協助上線階段的創辦人</h3>
+      <div class="prose">
+        <p>三種型態的 Claude 在上線階段全數投入，而且彼此複利:每個工具的產出都成為另外兩個的輸入。這正是讓「超精實模式」在結構上成為可能的原因——Claude Code 打造產品，Claude Cowork 打造產品周圍的公司，Claude 幫你把產品與組織知識操作化，讓小團隊運轉得像規模大上數倍的公司。</p>
+      </div>
+
+      <div class="stage">
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">在技術債複利前先還掉</p>
+          <h3>稽核、排序、把決策寫下來</h3>
+          <ul>
+            <li>用 Claude Code 跑一次完整架構稽核:哪裡脆弱、哪些捷徑會越來越貴、哪裡測試覆蓋太薄會讓同樣的問題重演。</li>
+            <li>把這些發現餵給 Claude 來分流與排序修復——什麼必須在下次發布前修、什麼可以等一個 sprint、什麼是可接受的持續性債。這也是把過去只存在你腦中的架構決策記進 <code>CLAUDE.md</code> 的時刻。</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">把資安與法遵變成持續工作流</p>
+          <h3>而不是一次性專案</h3>
+          <ul>
+            <li>用 Claude Code 揪出那些在你目標市場的 SOC 2、GDPR 或 HIPAA 稽核裡常見的程式碼層級問題——漏洞與法遵缺口都涵蓋。AI 掃描是輔助，不能取代合格的法遵審查。</li>
+            <li>把法遵建進開發週期，而不是只跑一次。針對你市場要求的框架做程式碼層級資安審查，再請 Claude 產出依優先順序排好的修復清單，<em>以及</em>企業採購團隊一定會索取的文件與控制項。</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">建立你一直略過的產品管理流程</p>
+          <h3>一套輕量的產品作業系統</h3>
+          <ul>
+            <li>上線階段需要不靠創辦人介入也能運轉的、輕量且可重複的流程。用 Claude 設計你的產品時間軸與工作週期如何安排、一份規格該包含什麼、Bug 回報如何分流與路由、每週指標報告涵蓋什麼。</li>
+            <li>再用 Claude Cowork 運轉操作層:安排 sprint 儀式、路由進來的 Bug 回報、從連接的資料源彙整每週指標、並維護讓使用者訊號持續流入產品決策的回饋迴圈。</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">建立取代創辦人注意力的系統</p>
+          <h3>先盤點，再自動化或授權</h3>
+          <ul>
+            <li>用 Claude Cowork 對你的營運負載做一次結構化盤點:每一項重複任務、每一個落到你桌上的決策、每一個只因為你記得才會發生的工作流。</li>
+            <li>請 Claude 把清單分成三類:可完全自動化的、需要真人但不必是你的、以及真正需要創辦人判斷的——然後為前兩類建立工作流邏輯。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Chapter 6 — Scale ====== -->
+    <section class="section" id="ch06">
+      <header class="chapter__head">
+        <span class="chapter__num">第 06 章 · 階段四</span>
+        <h2 class="chapter__title">規模化階段</h2>
+        <p class="chapter__sub">從一場賭注變成一門生意。創辦人的角色，從建造者重新對焦為對外的經營者。</p>
+      </header>
+
+      <div class="prose">
+        <p>規模化階段，把程式碼養大的工作，會與把整家公司養大、並讓它成熟為一門生意的工作並肩同行。數千名使用者長成數百萬人，單一市場長成許多市場。你的日常往公司本身傾斜——分析師簡報、IPO 路演——同時還要努力維持那份精實、以 AI 為核心的結構優勢。公開市場投資人、分析師、監管者、企業採購團隊與收購方，都施加更大的壓力與更深的懷疑;你的產品<em>與</em>組織，現在都得經得起外部檢視。</p>
+      </div>
+
+      <div class="stage">
+        <div class="stage__block">
+          <p class="stage__block-label">目標</p>
+          <h3>系統化、守得住的成長</h3>
+          <p>建立由成熟組織營運所支撐的系統化成長，並透過長期累積的深度建立護城河——把領域知識嵌入產品、與使用者仰賴的工具深度整合、累積競爭對手無法重現的系統資料。</p>
+        </div>
+
+        <div class="stage__block">
+          <p class="stage__block-label">離開條件</p>
+          <h3>一個門檻，三種樣貌之一</h3>
+          <ol>
+            <li>達到不再需要外部資金的、可持續的獲利規模。</li>
+            <li>具備 IPO 準備度——成長、治理、法遵都能通過公開市場的審視。</li>
+            <li>被一位真正看懂你護城河的收購方買下。</li>
+          </ol>
+          <p>三者都要求系統化、可被檢驗的成長、經得起檢視的護城河、以及營運成熟的組織。試金石問題:「如果一個資金雄厚的既有業者今天複製你的產品，你的使用者還會留下嗎?」</p>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">需留意的挑戰</p>
+          <h3>規模化階段才會冒出來的新考驗</h3>
+          <div class="challenges">
+            <div class="challenge">
+              <span class="challenge__num">01</span>
+              <h4 class="challenge__title">營運層的授權</h4>
+              <p class="challenge__body">放手太快——尤其是交給 AI 自動化系統——關鍵決策會在缺乏只有你能提供的脈絡下做出;抓得太緊，你自己就變成瓶頸。對一個從第一天就親力親為的創辦人，這既是結構挑戰，也是心理挑戰。最困難的工作，是把你腦中的組織知識編碼成可被記錄、可稽核、可移轉的系統。</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">02</span>
+              <h4 class="challenge__title">把技術營運推到企業級</h4>
+              <p class="challenge__body">客戶不再只評估你的產品——他們要的是一個可靠的基礎建設夥伴。簽多年合約的大型客戶與機構買家，期待文件、SLA、可觀測性、事件應變，以及傳遞「組織夠成熟」訊號的可靠度保證，而且會照這些標準要求你。</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">03</span>
+              <h4 class="challenge__title">擴張組織職能</h4>
+              <p class="challenge__body">一家規模化階段的公司，無論多少人在運轉，都需要組織基礎建設——招聘、薪資、會計、法務。營運面也擴展到財務報表、法遵監控、合約管理、客戶支援等職能。</p>
+            </div>
+            <div class="challenge">
+              <span class="challenge__num">04</span>
+              <h4 class="challenge__title">打造一個真正的 GTM 部門</h4>
+              <p class="challenge__body">有機的、創辦人帶頭的成長——一次抓準時機的發布、與早期客戶的私人關係——只能走到一個程度，多數新創就在規模化階段撞到這個天花板。一套正當的 GTM 動作需要市場區隔、訊息架構、銷售腳本，以及一套面向你從沒賣過的受眾(包含投資人與企業買家)的品牌語氣。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-h">Claude 如何協助規模化階段的創辦人</h3>
+      <div class="stage">
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">把日常交給 Claude Cowork</p>
+          <h3>對「你的注意力該放哪」有清醒的認識</h3>
+          <ul>
+            <li>請 Claude 列出此刻只有你該做的事——產品敘事、董事會關係、企業大單、創辦人對創辦人的對話。不在這份清單上的，都是授權或交給 Cowork 自動化的候選。</li>
+            <li>產出一張營運層的瓶頸地圖，再問:你一週不在時，每個工作流會怎樣?那些會停擺的，正是你還親力到足以拖慢進度的地方——把那些自動化收緊或替換掉。</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">把技術營運擴展成企業級基礎建設</p>
+          <h3>打造程式庫<em>周圍</em>的工作</h3>
+          <ul>
+            <li>用 Claude 草擬並維護企業採購會看的書面基礎建設——產品文件、支援手冊、SLA。</li>
+            <li>指揮 Claude Code 依企業可靠度與資安標準稽核並加固程式庫，並建出一個 Discord 社群從不需要的支援基礎建設:日誌、監控、事件應變工具，以及讓 SLA 真正可執行的可觀測性。接著 Claude Cowork 運轉企業支援本身——工單路由、升級、由產品變更觸發的文件更新、續約追蹤、回報節奏。</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">把領域專業變成 AI 脈絡</p>
+          <h3>一份通用型 AI 比不過的專有知識底層</h3>
+          <ul>
+            <li>透過延伸對話、專案與記憶，把你所知的一切——產業術語、法規地雷、邊緣案例、「表面答案行不通的原因」——寫進一份結構化、可搜尋的脈絡。Skills 接著能把重複的工作流編碼成可重用的常式，讓 Claude 每次都以同樣方式執行。</li>
+            <li><strong>把領域邊緣案例編碼進產品。</strong>讓 Claude Code 為你在這個垂直領域看過的每個真實邊緣案例建一個專屬測試案例(不是單元測試)。每次有類似的出現就補進去——你的測試套件，會變成一張你的護城河地圖。</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">把使用者資料複利成可守住的優勢</p>
+          <h3>一個複製者無法重現的行為指紋</h3>
+          <ul>
+            <li>使用者互動時會產生行為訊號——他們接受什麼、拒絕什麼——這些都餵養路線圖。這份資料是時間鎖死、與情境綁定的:你買不到數千名使用者在你產品裡持續打磨工作流所留下的行為指紋。</li>
+            <li>請 Claude 稽核你蒐集到的互動資料，找出訊號最強的三個模式，並設計把每一個轉化為系統性模型改進的回饋迴圈——再草擬一份給產品行銷用的一頁護城河敘事:你的資料飛輪如何運作、轉了多久、以及一個今天才起步的資金雄厚競爭對手，為何兩年內都複製不了。</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">建立工作流黏著度</p>
+          <h3>用深度鎖住，而非用摩擦力</h3>
+          <ul>
+            <li>使用者把你的產品跑進日常營運越久，它就嵌得越深——在它之上建的自動化、被訓練來用它的人、與他們其他工具的連接。到那個程度，「換掉」就從一個產品決策，變成一個完整的營運專案。</li>
+            <li>請 Claude 依整合深度描繪你的客戶群，再讓 Claude Code 拉出原生整合、API、Webhook 與 SDK，讓客戶<em>站在</em>你的產品上開發，而不只是使用它——這是最深層的黏著。</li>
+          </ul>
+        </div>
+
+        <div class="stage__block stage__block--wide">
+          <p class="stage__block-label">打造真正的 GTM 部門</p>
+          <h3>啟動 go-to-market 引擎</h3>
+          <ul>
+            <li>Claude 從零草擬基礎 GTM 資源——市場區隔、訊息架構、分析師關係策略、銷售腳本、面向投資人的指標敘事——把你產品的價值主張，翻譯成對每個受眾區隔都切題的產品行銷方法。</li>
+            <li>Claude Cowork 成為戰術執行層:內容生產線、外展節奏、分析師簡報後勤、新聞室與 PR 節奏、CRM 整潔、管道報表。當動作需要產品行銷基礎建設——互動 Demo 環境、整合文件、沙盒租戶、API 參考——由 Claude Code 打造，讓一個建得好的 Demo 在你開董事會時也能成交。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Chapter 7 ====== -->
+    <section class="section" id="ch07">
+      <header class="chapter__head">
+        <span class="chapter__num">第 07 章</span>
+        <h2 class="chapter__title">工作未變，規則已改</h2>
+        <p class="chapter__sub">創辦人的工作沒有變，變的是走完這份工作的路徑。</p>
+      </header>
+
+      <div class="prose">
+        <p>在 AI 時代，創辦人的工作沒有變:找到一個真實的問題、打造能解決它的東西、把它規模化成一家真正重要的公司。變的是抵達那裡的路徑。橫跨四個階段——構想、MVP、上線、規模化——AI 把好幾季壓縮成幾週。</p>
+        <p>過去要好幾個月的驗證循環，現在一個下午就跑完。可運作的原型不再需要一位握著對的技術棧的共同創辦人,只需要一個清楚的問題，加上幾場與編碼代理高度聚焦的對話。上線準備從上線前夕的兵荒馬亂，壓縮成一條持續推進的工作流。而在規模化階段，過去逼著早期員工去救火的營運重量，越來越能交給 AI 承擔——把你的團隊釋放出來，去做那些終將成為你護城河的判斷題。</p>
+      </div>
+
+      <blockquote class="pullquote">
+        瓶頸不再是你能蓋出什麼，而是你選擇蓋什麼。
+        <span class="pullquote__attr">— 創辦人的行動手冊，第 7 章</span>
+      </blockquote>
+    </section>
+
+    <!-- ====== Resources ====== -->
+    <section class="section" id="resources">
+      <header class="chapter__head">
+        <span class="chapter__num">第 08 章</span>
+        <h2 class="chapter__title">延伸資源</h2>
+        <p class="chapter__sub">從 Anthropic 的資料庫，往下一步走。</p>
+      </header>
+
+      <h3 class="section-h">用 Claude 開發</h3>
+      <div class="resources">
+        <a class="resource" href="https://docs.claude.com/en/docs/claude-code/overview" target="_blank" rel="noopener">
+          <span class="resource__num">01</span>
+          <span>
+            <span class="resource__title">Claude Code 文件</span>
+            <span class="resource__desc">從安裝到進階代理工作流程——先從「Claude Code 如何運作」概覽開始。</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://www.anthropic.com/engineering/claude-code-best-practices" target="_blank" rel="noopener">
+          <span class="resource__num">02</span>
+          <span>
+            <span class="resource__title">Claude Code 最佳實務</span>
+            <span class="resource__desc">在 Anthropic 內部與各工程團隊驗證過的做法——脈絡管理、權限、規劃、驗證。</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://docs.claude.com/en/docs/claude-code/memory" target="_blank" rel="noopener">
+          <span class="resource__num">03</span>
+          <span>
+            <span class="resource__title">使用 CLAUDE.md 檔案</span>
+            <span class="resource__desc">為你的程式庫設定持久化的專案記憶——MVP 階段必讀。</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://claude.com/resources/tutorials" target="_blank" rel="noopener">
+          <span class="resource__num">04</span>
+          <span>
+            <span class="resource__title">教學資源庫</span>
+            <span class="resource__desc">可搜尋、手把手的任務式教學清單。</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://www.anthropic.com/solutions/startups" target="_blank" rel="noopener">
+          <span class="resource__num">05</span>
+          <span>
+            <span class="resource__title">為新創打造 AI 代理</span>
+            <span class="resource__desc">新創如何運用代理，在規模化時降低對創辦人的依賴。</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://www.anthropic.com/engineering/claude-code-best-practices" target="_blank" rel="noopener">
+          <span class="resource__num">06</span>
+          <span>
+            <span class="resource__title">Claude Code 進階技巧</span>
+            <span class="resource__desc">來自 Claude Code 團隊本身的工作流模式，含平行對話與驗證迴圈。</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://claude.com/" target="_blank" rel="noopener">
+          <span class="resource__num">07</span>
+          <span>
+            <span class="resource__title">開始使用 Claude Cowork</span>
+            <span class="resource__desc">團隊如何設定 Cowork，並開始導入 Skills、外掛等功能，把它的影響力擴散到整個新創。</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+      </div>
+
+      <h3 class="section-h">創辦人案例</h3>
+      <p class="prose" style="margin-bottom: 1rem;">原書收錄、在生命週期各階段以 Claude 打造產品的部分公司。完整介紹與連結請見<a href="https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf" target="_blank" rel="noopener">原文 PDF</a>。</p>
+      <div class="stories">
+        <article class="story">
+          <span class="story__tag">YC · Claude Code 開發</span>
+          <h3 class="story__name">HumanLayer、Ambral、Vulcan Technologies</h3>
+          <p class="story__body">三家 YC 新創(F24 / W25 / S25),用 Claude 快速從原型走到市場，並以代理式編碼工作流規模化 AI 驅動的平台。</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">法律</span>
+          <h3 class="story__name">GC AI</h3>
+          <p class="story__body">創辦人運用領域專業，圍繞「內部法務團隊實際怎麼工作」打造一個反應靈敏、由 Claude 驅動的法律平台——公司專屬手冊、跨職能利害關係人、可變的風險容忍門檻。</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">醫療</span>
+          <h3 class="story__name">Carta Healthcare</h3>
+          <p class="story__body">用 Claude 驅動其臨床資料萃取平台，每年處理 2.2 萬例手術，並把資料萃取時間縮短 66%。</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">無程式碼 · Agent SDK</span>
+          <h3 class="story__name">Anything</h3>
+          <p class="story__body">由 Claude 與 Agent SDK 驅動，已協助 150 萬名使用者把點子變成可運作的軟體、無需寫程式——其中一位非技術創辦人，已在販售一個完整的招募平台。</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">資安</span>
+          <h3 class="story__name">Cogent</h3>
+          <p class="story__body">一間應用 AI 實驗室，打造自動化關鍵企業資安任務的代理，以 Claude 作為推理層，貫穿調查、排序到修復的完整漏洞生命週期。</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">營運 · Cowork</span>
+          <h3 class="story__name">Airtree</h3>
+          <p class="story__body">把 Claude Cowork 當成營運基礎建設的中心，整合過去散落在各工具與團隊的資料，讓任何人都能執行那個一次建好的工作流自動化。</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">採購 · Agent SDK</span>
+          <h3 class="story__name">Duvo</h3>
+          <p class="story__body">打造跨 ERP、供應商入口、試算表、email 甚至電話的採購、供應鏈與品類管理 AI 代理——完全建立在 Claude 之上。</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">居家照護 · EMR</span>
+          <h3 class="story__name">Zingage</h3>
+          <p class="story__body">為居家照護機構打造 24/7 自動化營運的 AI 代理平台，用 Claude 的工具呼叫跨 EMR 與多種管道，產出細膩、為病患量身的結果。</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">非營利</span>
+          <h3 class="story__name">Kindora</h3>
+          <p class="story__body">由一位非營利主管以 Claude 打造，智慧媒合慈善組織與資助方;其 MCP 連接器讓非營利組織能直接在 Claude 裡使用它的潛在對象探勘工具。</p>
+        </article>
+        <article class="story">
+          <span class="story__tag">法律</span>
+          <h3 class="story__name">Wordsmith</h3>
+          <p class="story__body">由一位律師轉任 CTO 創立，以 Claude 作為合約審查、協議草擬與文件審閱的推理引擎，工程團隊則用 Claude Code 打造平台本身。</p>
+        </article>
+      </div>
+
+      <h3 class="section-h">新創支援與機會</h3>
+      <div class="resources">
+        <a class="resource" href="https://www.anthropic.com/startups" target="_blank" rel="noopener">
+          <span class="resource__num">01</span>
+          <span>
+            <span class="resource__title">Anthropic 新創計畫</span>
+            <span class="resource__desc">為與 Anthropic 創投夥伴合作的新創:免費 API 點數、公開可得的最高速率限制，以及專屬創辦人活動與工作坊邀請。</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://www.anthropic.com/community" target="_blank" rel="noopener">
+          <span class="resource__num">02</span>
+          <span>
+            <span class="resource__title">Claude 社群</span>
+            <span class="resource__desc">給開發者的論壇與社群空間。</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://www.anthropic.com/events" target="_blank" rel="noopener">
+          <span class="resource__num">03</span>
+          <span>
+            <span class="resource__title">即時學習資源</span>
+            <span class="resource__desc">研討會、線上講座、直播與錄影。</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+        <a class="resource" href="https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf" target="_blank" rel="noopener">
+          <span class="resource__num">04</span>
+          <span>
+            <span class="resource__title">完整 36 頁 PDF</span>
+            <span class="resource__desc">原文出版品，包含所有創辦人故事與案例研究。</span>
+          </span>
+          <span class="resource__arrow">↗</span>
+        </a>
+      </div>
+
+      <div class="closing">
+        <span class="closing__rule" aria-hidden="true"></span>
+        <p class="closing__title">「從一場賭注，變成一門生意。」</p>
+        <p class="closing__sub">當成長是系統性的、護城河經得起檢視、組織具備可持續性——這時候，恭喜你，是發自內心的。</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p>完整版 · 以善意整理自<a href="https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf" target="_blank" rel="noopener">原文 PDF</a>，內容版權皆屬 Anthropic 所有。</p>
+    <p><a href="https://github.com/tingwei161803/anthropic-the-founder-playbook" target="_blank" rel="noopener">GitHub</a> 開源 · <a href="../../zh-Hant/" data-version-link>精華導讀版</a> · 提供語言:<a href="../" data-lang-link>English</a> &amp; <a href="./" aria-current="true">繁體中文</a></p>
+  </div>
+</footer>
+
+<script src="../../assets/app.js" defer></script>
+</body>
+</html>
