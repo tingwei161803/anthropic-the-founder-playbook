@@ -15,8 +15,8 @@ The browser experience — sticky table of contents, reading progress, language 
 
 | Language            | On GitHub Pages (live)                                                          | Local (after `git clone`)         |
 | ------------------- | ------------------------------------------------------------------------------- | --------------------------------- |
-| English             | <https://tingwei161803.github.io/anthropic-the-founder-playbook/>               | open [`index.html`](./index.html)               |
-| 繁體中文              | <https://tingwei161803.github.io/anthropic-the-founder-playbook/zh-Hant/>       | open [`zh-Hant/index.html`](./zh-Hant/index.html) |
+| English             | <https://anthropic-the-founder-playbook.peteraim.com/>               | open [`index.html`](./index.html)               |
+| 繁體中文              | <https://anthropic-the-founder-playbook.peteraim.com/zh-Hant/>       | open [`zh-Hant/index.html`](./zh-Hant/index.html) |
 
 ### 📄 Markdown version
 
