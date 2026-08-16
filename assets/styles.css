@@ -894,6 +894,29 @@ body::before {
 }
 .site-footer a:hover { color: var(--ink); text-decoration-color: var(--accent); }
 
+.site-footer__social {
+  display: flex; gap: 0.5rem;
+  align-self: center;
+  margin-left: auto;
+}
+/* Outspecify `.site-footer a` (0,1,1) so the icons lose the body-link underline. */
+.site-footer .site-footer__icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
+}
+.site-footer .site-footer__icon:hover,
+.site-footer .site-footer__icon:focus-visible {
+  color: var(--accent-dark);
+  border-color: var(--accent);
+  background: var(--accent-tint);
+}
+.site-footer__icon svg { display: block; }
+
 /* ---------- Mobile / TOC toggle ---------- */
 .toc__toggle { display: none; }
 
@@ -951,6 +974,9 @@ body::before {
   .ghstar__text { display: none; }               /* icon + star only */
   .lang-switch a, .ver-switch a { padding: 0.3rem 0.6rem; }
   .lang-switch, .ver-switch { font-size: 0.78rem; }
+
+  /* Footer stacks here — let the icons sit flush with the text above them */
+  .site-footer__social { margin-left: 0; align-self: flex-start; }
 }
 
 /* Tightest screens: drop the brand wordmark to the diamond so the switches win the room */
