@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  這個子站自己的 sitemap(四頁:語言 × 深度 的 2×2)。
+
+  為什麼需要:peteraim.com 的總 sitemap 只列了本站首頁 `/`,另外三頁只能靠
+  內部連結被發現。實測 /full/zh-Hant/ 至今仍是「Google 未知」,就是這個原因。
+
+  刻意不寫 <lastmod>:沒有可信的「內容最後修改時間」來源。git commit 時間不等於
+  內容變動時間——例如 2026-08-20 那次 commit 只加了 head 的 meta,內文一個字沒改,
+  若照 commit 時間寫 lastmod 就是在騙 Google。給錯的 lastmod 比不給更糟,
+  Google 會學會忽略整份 sitemap 的 lastmod。
+
+  刻意不列 /docs/*:原始素材與內部文件,見 robots.txt。
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://anthropic-the-founder-playbook.peteraim.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anthropic-the-founder-playbook.peteraim.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://anthropic-the-founder-playbook.peteraim.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anthropic-the-founder-playbook.peteraim.com/"/>
+  </url>
+  <url>
+    <loc>https://anthropic-the-founder-playbook.peteraim.com/zh-Hant/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anthropic-the-founder-playbook.peteraim.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://anthropic-the-founder-playbook.peteraim.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anthropic-the-founder-playbook.peteraim.com/"/>
+  </url>
+  <url>
+    <loc>https://anthropic-the-founder-playbook.peteraim.com/full/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anthropic-the-founder-playbook.peteraim.com/full/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://anthropic-the-founder-playbook.peteraim.com/full/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anthropic-the-founder-playbook.peteraim.com/full/"/>
+  </url>
+  <url>
+    <loc>https://anthropic-the-founder-playbook.peteraim.com/full/zh-Hant/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anthropic-the-founder-playbook.peteraim.com/full/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://anthropic-the-founder-playbook.peteraim.com/full/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anthropic-the-founder-playbook.peteraim.com/full/"/>
+  </url>
+</urlset>
