@@ -1,0 +1,15 @@
+# https://anthropic-the-founder-playbook.peteraim.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# /docs/ 是原始素材與內部文件,不是寫給讀者或搜尋引擎的內容:
+#   playbook.pdf            Anthropic 的原始 PDF(著作權屬 Anthropic)
+#   playbook.*.md           四個 HTML 頁面的 markdown 版本——會與頁面完全重複
+#   superpowers/specs/*.md  內部設計文件
+# 2026-08-20 用 URL 檢查 API 確認過:這些網址 Google 目前全都「未知」,
+# 因為四個 HTML 頁面沒有任何連結指向 /docs/。這條是預防性的,擋住將來被發現。
+# 注意:Disallow 只能阻止「爬取」,不能移除已收錄的內容。目前沒有已收錄項目,所以夠用。
+Disallow: /docs/
+
+Sitemap: https://anthropic-the-founder-playbook.peteraim.com/sitemap.xml
