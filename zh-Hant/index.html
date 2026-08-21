@@ -87,8 +87,7 @@
 
   <!-- ============ MAIN ============ -->
   <main class="main">
-
-    <!-- ====== Cover / Hero ====== -->
+<!-- ====== Cover / Hero ====== -->
     <section class="section hero" id="cover">
       <p class="hero__eyebrow">Anthropic 出版 · 2026 年 5 月</p>
       <h1 class="hero__title">創辦人的<em>行動手冊</em></h1>
@@ -125,7 +124,7 @@
       <p class="hero__more">
         <strong>這是精華導讀版。</strong>
         <span>想看逐節完整內容、所有練習與創辦人案例?</span>
-        <a href="../full/zh-Hant/" data-version-link>閱讀完整版</a>
+        <a href="../full/zh-Hant/" data-version-link="">閱讀完整版</a>
       </p>
     </section>
 
@@ -193,7 +192,7 @@
       </header>
 
       <div class="prose">
-        <p>每一家新創都從同一個起點出發：一個讓創辦人念念不忘的問題。這個階段的工作是研究、客戶探索，以及誠實面對所有反向證據——這一切都應該<em>發生在</em>請 Claude Code 生成任何一行正式程式碼之前。</p>
+        <p>每一家新創都從同一個起點出發：一個讓創辦人念念不忘的問題。這個階段的工作是研究、客戶探索，以及誠實面對所有反向證據——這一切都應該<em>發生在</em>請 <span class="product is-lit">Claude Code</span> 生成任何一行正式程式碼之前。</p>
       </div>
 
       <div class="stage">
@@ -240,10 +239,10 @@
           <h3>把假設磨利，再對它施加壓力測試</h3>
           <ul>
             <li><strong>用足夠的具體性定義問題。</strong>「合約審查很耗時」沒辦法被檢驗。「中型企業的法務團隊每份合約要花 3 天以上，因為紅線修訂都散落在 email 串裡」才可以。</li>
-            <li><strong>分層描繪競爭對手。</strong>直接競品、間接競品、潛在收購方、鄰近領域玩家——接著請 Claude 為每一個對手辯護，說明它為什麼會贏過你。</li>
+            <li><strong>分層描繪競爭對手。</strong>直接競品、間接競品、潛在收購方、鄰近領域玩家——接著請 <span class="product is-lit">Claude</span> 為每一個對手辯護，說明它為什麼會贏過你。</li>
             <li><strong>設計訪談架構。</strong>問的是相關的「過去」，而不是想像中的「未來」。把「你會用這個嗎？」換成「上一次你遇到這個問題的時候，是怎麼處理的？」</li>
-            <li><strong>建立 5 場訪談的綜整迴圈。</strong>每進行完五場對話，讓 Claude Cowork 整理出兩份清單——支持的證據、反對的證據。如果第一份明顯比較長，反問自己：這個落差反映的是真實的資料，還是你內心的期待？</li>
-            <li><strong>只蓋一個核心互動。</strong>當你終於打開 Claude Code，請只完成你的解法所仰賴的那一個關鍵互動。把它放到五位已被驗證過的目標使用者面前。他們的反應，決定你接下來該不該繼續往下蓋。</li>
+            <li><strong>建立 5 場訪談的綜整迴圈。</strong>每進行完五場對話，讓 <span class="product is-lit">Claude Cowork</span> 整理出兩份清單——支持的證據、反對的證據。如果第一份明顯比較長，反問自己：這個落差反映的是真實的資料，還是你內心的期待？</li>
+            <li><strong>只蓋一個核心互動。</strong>當你終於打開 <span class="product is-lit">Claude Code</span>，請只完成你的解法所仰賴的那一個關鍵互動。把它放到五位已被驗證過的目標使用者面前。他們的反應，決定你接下來該不該繼續往下蓋。</li>
           </ul>
         </div>
       </div>
@@ -305,10 +304,10 @@
           <p class="stage__block-label">Claude 如何協助</p>
           <h3>在動程式碼之前，先定義架構與範疇</h3>
           <ul>
-            <li><strong>架構脈絡文件。</strong>打開 Claude（不是 Claude Code），描述你正在打造什麼、為誰服務、預期的規模有多大。把產出存成 <code>CLAUDE.md</code>——這份持久化的專案記憶，會被每一次 Claude Code 對話讀取。</li>
+            <li><strong>架構脈絡文件。</strong>打開 <span class="product is-lit">Claude</span>（不是 <span class="product is-lit">Claude Code</span>），描述你正在打造什麼、為誰服務、預期的規模有多大。把產出存成 <code>CLAUDE.md</code>——這份持久化的專案記憶，會被每一次 <span class="product is-lit">Claude Code</span> 對話讀取。</li>
             <li><strong>範疇先寫下來，要修改得有證據。</strong>明確寫出產品「會做什麼」、「刻意不做什麼」、以及「在什麼樣的使用者證據下才會新增功能」。這把問題從「我們該不該做這個？」轉成「使用者是否親口告訴我們，沒有這個就拿不到價值？」</li>
-            <li><strong>Claude Code 的對話樣板。</strong>開場帶上脈絡文件與當下任務，收尾留下一段簡短日誌。每場對話多花五分鐘寫文件，是抵抗架構漂移最便宜的保險。</li>
-            <li><strong>使用者出現之前先做資安審查。</strong>請 Claude 跑過身分驗證、Session 管理、輸入驗證、API 回應介面與相依套件漏洞。把發現的問題視為必須處理的待辦事項，而不是建議。</li>
+            <li><strong><span class="product is-lit">Claude Code</span> 的對話樣板。</strong>開場帶上脈絡文件與當下任務，收尾留下一段簡短日誌。每場對話多花五分鐘寫文件，是抵抗架構漂移最便宜的保險。</li>
+            <li><strong>使用者出現之前先做資安審查。</strong>請 <span class="product is-lit">Claude</span> 跑過身分驗證、Session 管理、輸入驗證、API 回應介面與相依套件漏洞。把發現的問題視為必須處理的待辦事項，而不是建議。</li>
             <li><strong>在上線<em>之前</em>就建立衡量框架。</strong>定義留存基準、啟用條件、Day 7 / Day 30 指標目標，以及「什麼樣的數字算是假陽性」——在第一位使用者註冊之前就要想清楚。</li>
             <li><strong>該轉就要轉。</strong>連續三輪迭代都沒有起色之後，做一次診斷：是否有某個區隔的反應與其他人不同？這是定位問題還是產品問題？要讓現在這個產品找到 PMF，前提需要是什麼？</li>
           </ul>
@@ -376,9 +375,9 @@
           <p class="stage__block-label">Claude 如何協助</p>
           <h3>建立系統，取代創辦人的注意力</h3>
           <ul>
-            <li><strong>在問題複利之前先還掉技術債。</strong>Claude Code 跑架構稽核，Claude 為工作分流與排序，<code>CLAUDE.md</code> 把過去只存在你腦中的決策記錄下來。</li>
+            <li><strong>在問題複利之前先還掉技術債。</strong><span class="product is-lit">Claude Code</span> 跑架構稽核，<span class="product is-lit">Claude</span> 為工作分流與排序，<code>CLAUDE.md</code> 把過去只存在你腦中的決策記錄下來。</li>
             <li><strong>把資安當成持續工作流，而不是一次性專案。</strong>依照你切入的市場，做對應 SOC 2 / GDPR / HIPAA 的程式碼層級審查。產出：依優先順序排好的修復清單，加上企業採購團隊一定會索取的文件。</li>
-            <li><strong>一套輕量的產品作業系統。</strong>Sprint 節奏、最小規格樣板、Bug 分流決策樹、從真實資料源拉出的每週指標簡報——由 Claude 設計、跑在 Claude Cowork 上。</li>
+            <li><strong>一套輕量的產品作業系統。</strong>Sprint 節奏、最小規格樣板、Bug 分流決策樹、從真實資料源拉出的每週指標簡報——由 <span class="product is-lit">Claude</span> 設計、跑在 <span class="product is-lit">Claude Cowork</span> 上。</li>
             <li><strong>創辦人瓶頸盤點。</strong>把所有目前需要經過你才能往下走的事項列出來，分成三類：<em>自動化</em>、<em>授權出去</em>、<em>只有創辦人能做</em>。然後為前兩類建立工作流邏輯。</li>
           </ul>
         </div>
@@ -444,7 +443,7 @@
             <li><strong>把領域邊緣案例編碼進產品。</strong>你的測試套件，會變成一張你的護城河地圖。每當競爭對手會做錯的場景出現，就把它補進案例庫。</li>
             <li><strong>讓使用者資料複利成可守住的優勢。</strong>數千名使用者在你的產品裡持續打磨自己工作流所留下的行為指紋，是隨時間鎖死、無法被重新製造的東西。找出訊號最強的模式，並設計把「使用」轉化為「系統性改進」的迴圈。</li>
             <li><strong>用深度創造工作流黏著度，而不是用摩擦力。</strong>原生整合、API、Webhook、SDK——讓客戶<em>站在</em>你的產品上開發，而不是只是用你的產品。這是最深層的黏著。</li>
-            <li><strong>啟動 GTM 引擎。</strong>Claude 草擬市場區隔、訊息架構、面向投資人的敘事；Claude Cowork 運轉內容生產線、外展節奏、業務管道報表；Claude Code 打造在你忙著開董事會時也能成交的 Demo 環境與整合文件。</li>
+            <li><strong>啟動 GTM 引擎。</strong><span class="product is-lit">Claude</span> 草擬市場區隔、訊息架構、面向投資人的敘事；<span class="product is-lit">Claude Cowork</span> 運轉內容生產線、外展節奏、業務管道報表；<span class="product is-lit">Claude Code</span> 打造在你忙著開董事會時也能成交的 Demo 環境與整合文件。</li>
           </ul>
         </div>
       </div>
@@ -538,8 +537,7 @@
         <p class="closing__sub">當成長是系統性的、護城河經得起檢視、組織具備可持續性——這時候，恭喜你，是發自內心的。</p>
       </div>
     </section>
-
-  </main>
+</main>
 </div>
 
 <footer class="site-footer">
